@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A802D6DA236F5D3600616AF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A802D6D9236F5D3600616AF1 /* AppDelegate.swift */; };
+		A802D6DC236F5D3600616AF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A802D6DB236F5D3600616AF1 /* SceneDelegate.swift */; };
+		A802D6DF236F5D3600616AF1 /* valiutchik.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A802D6DD236F5D3600616AF1 /* valiutchik.xcdatamodeld */; };
+		A802D6E1236F5D3600616AF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A802D6E0236F5D3600616AF1 /* ContentView.swift */; };
+		A802D6E3236F5D3900616AF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A802D6E2236F5D3900616AF1 /* Assets.xcassets */; };
+		A802D6E6236F5D3900616AF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A802D6E5236F5D3900616AF1 /* Preview Assets.xcassets */; };
+		A802D6E9236F5D3900616AF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A802D6E7236F5D3900616AF1 /* LaunchScreen.storyboard */; };
+		A802D6F4236F5D3900616AF1 /* valiutchikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A802D6F3236F5D3900616AF1 /* valiutchikTests.swift */; };
+		A802D6FF236F5D3900616AF1 /* valiutchikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A802D6FE236F5D3900616AF1 /* valiutchikUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A802D6F0236F5D3900616AF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A802D6CE236F5D3600616AF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A802D6D5236F5D3600616AF1;
+			remoteInfo = valiutchik;
+		};
+		A802D6FB236F5D3900616AF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A802D6CE236F5D3600616AF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A802D6D5236F5D3600616AF1;
+			remoteInfo = valiutchik;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A802D6D6236F5D3600616AF1 /* valiutchik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = valiutchik.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A802D6D9236F5D3600616AF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A802D6DB236F5D3600616AF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A802D6DE236F5D3600616AF1 /* valiutchik.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = valiutchik.xcdatamodel; sourceTree = "<group>"; };
+		A802D6E0236F5D3600616AF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A802D6E2236F5D3900616AF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A802D6E5236F5D3900616AF1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A802D6E8236F5D3900616AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A802D6EA236F5D3900616AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A802D6EF236F5D3900616AF1 /* valiutchikTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = valiutchikTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A802D6F3236F5D3900616AF1 /* valiutchikTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = valiutchikTests.swift; sourceTree = "<group>"; };
+		A802D6F5236F5D3900616AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A802D6FA236F5D3900616AF1 /* valiutchikUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = valiutchikUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A802D6FE236F5D3900616AF1 /* valiutchikUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = valiutchikUITests.swift; sourceTree = "<group>"; };
+		A802D700236F5D3900616AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A802D6D3236F5D3600616AF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A802D6EC236F5D3900616AF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A802D6F7236F5D3900616AF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A802D6CD236F5D3600616AF1 = {
+			isa = PBXGroup;
+			children = (
+				A802D6D8236F5D3600616AF1 /* valiutchik */,
+				A802D6F2236F5D3900616AF1 /* valiutchikTests */,
+				A802D6FD236F5D3900616AF1 /* valiutchikUITests */,
+				A802D6D7236F5D3600616AF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A802D6D7236F5D3600616AF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A802D6D6236F5D3600616AF1 /* valiutchik.app */,
+				A802D6EF236F5D3900616AF1 /* valiutchikTests.xctest */,
+				A802D6FA236F5D3900616AF1 /* valiutchikUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A802D6D8236F5D3600616AF1 /* valiutchik */ = {
+			isa = PBXGroup;
+			children = (
+				A802D6D9236F5D3600616AF1 /* AppDelegate.swift */,
+				A802D6DB236F5D3600616AF1 /* SceneDelegate.swift */,
+				A802D6E0236F5D3600616AF1 /* ContentView.swift */,
+				A802D6E2236F5D3900616AF1 /* Assets.xcassets */,
+				A802D6E7236F5D3900616AF1 /* LaunchScreen.storyboard */,
+				A802D6EA236F5D3900616AF1 /* Info.plist */,
+				A802D6DD236F5D3600616AF1 /* valiutchik.xcdatamodeld */,
+				A802D6E4236F5D3900616AF1 /* Preview Content */,
+			);
+			path = valiutchik;
+			sourceTree = "<group>";
+		};
+		A802D6E4236F5D3900616AF1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A802D6E5236F5D3900616AF1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A802D6F2236F5D3900616AF1 /* valiutchikTests */ = {
+			isa = PBXGroup;
+			children = (
+				A802D6F3236F5D3900616AF1 /* valiutchikTests.swift */,
+				A802D6F5236F5D3900616AF1 /* Info.plist */,
+			);
+			path = valiutchikTests;
+			sourceTree = "<group>";
+		};
+		A802D6FD236F5D3900616AF1 /* valiutchikUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A802D6FE236F5D3900616AF1 /* valiutchikUITests.swift */,
+				A802D700236F5D3900616AF1 /* Info.plist */,
+			);
+			path = valiutchikUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A802D6D5236F5D3600616AF1 /* valiutchik */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A802D703236F5D3900616AF1 /* Build configuration list for PBXNativeTarget "valiutchik" */;
+			buildPhases = (
+				A802D6D2236F5D3600616AF1 /* Sources */,
+				A802D6D3236F5D3600616AF1 /* Frameworks */,
+				A802D6D4236F5D3600616AF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = valiutchik;
+			productName = valiutchik;
+			productReference = A802D6D6236F5D3600616AF1 /* valiutchik.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A802D6EE236F5D3900616AF1 /* valiutchikTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A802D706236F5D3900616AF1 /* Build configuration list for PBXNativeTarget "valiutchikTests" */;
+			buildPhases = (
+				A802D6EB236F5D3900616AF1 /* Sources */,
+				A802D6EC236F5D3900616AF1 /* Frameworks */,
+				A802D6ED236F5D3900616AF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A802D6F1236F5D3900616AF1 /* PBXTargetDependency */,
+			);
+			name = valiutchikTests;
+			productName = valiutchikTests;
+			productReference = A802D6EF236F5D3900616AF1 /* valiutchikTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A802D6F9236F5D3900616AF1 /* valiutchikUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A802D709236F5D3900616AF1 /* Build configuration list for PBXNativeTarget "valiutchikUITests" */;
+			buildPhases = (
+				A802D6F6236F5D3900616AF1 /* Sources */,
+				A802D6F7236F5D3900616AF1 /* Frameworks */,
+				A802D6F8236F5D3900616AF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A802D6FC236F5D3900616AF1 /* PBXTargetDependency */,
+			);
+			name = valiutchikUITests;
+			productName = valiutchikUITests;
+			productReference = A802D6FA236F5D3900616AF1 /* valiutchikUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A802D6CE236F5D3600616AF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Andrei Mukamolau";
+				TargetAttributes = {
+					A802D6D5236F5D3600616AF1 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					A802D6EE236F5D3900616AF1 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = A802D6D5236F5D3600616AF1;
+					};
+					A802D6F9236F5D3900616AF1 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = A802D6D5236F5D3600616AF1;
+					};
+				};
+			};
+			buildConfigurationList = A802D6D1236F5D3600616AF1 /* Build configuration list for PBXProject "valiutchik" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A802D6CD236F5D3600616AF1;
+			productRefGroup = A802D6D7236F5D3600616AF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A802D6D5236F5D3600616AF1 /* valiutchik */,
+				A802D6EE236F5D3900616AF1 /* valiutchikTests */,
+				A802D6F9236F5D3900616AF1 /* valiutchikUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A802D6D4236F5D3600616AF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A802D6E9236F5D3900616AF1 /* LaunchScreen.storyboard in Resources */,
+				A802D6E6236F5D3900616AF1 /* Preview Assets.xcassets in Resources */,
+				A802D6E3236F5D3900616AF1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A802D6ED236F5D3900616AF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A802D6F8236F5D3900616AF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A802D6D2236F5D3600616AF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A802D6DF236F5D3600616AF1 /* valiutchik.xcdatamodeld in Sources */,
+				A802D6DA236F5D3600616AF1 /* AppDelegate.swift in Sources */,
+				A802D6E1236F5D3600616AF1 /* ContentView.swift in Sources */,
+				A802D6DC236F5D3600616AF1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A802D6EB236F5D3900616AF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A802D6F4236F5D3900616AF1 /* valiutchikTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A802D6F6236F5D3900616AF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A802D6FF236F5D3900616AF1 /* valiutchikUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A802D6F1236F5D3900616AF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A802D6D5236F5D3600616AF1 /* valiutchik */;
+			targetProxy = A802D6F0236F5D3900616AF1 /* PBXContainerItemProxy */;
+		};
+		A802D6FC236F5D3900616AF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A802D6D5236F5D3600616AF1 /* valiutchik */;
+			targetProxy = A802D6FB236F5D3900616AF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A802D6E7236F5D3900616AF1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A802D6E8236F5D3900616AF1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A802D701236F5D3900616AF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A802D702236F5D3900616AF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A802D704236F5D3900616AF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "valiutchik/Preview\\ Content";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = valiutchik/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fobo66.valiutchik;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A802D705236F5D3900616AF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "valiutchik/Preview\\ Content";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = valiutchik/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fobo66.valiutchik;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A802D707236F5D3900616AF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = valiutchikTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fobo66.valiutchikTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/valiutchik.app/valiutchik";
+			};
+			name = Debug;
+		};
+		A802D708236F5D3900616AF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = valiutchikTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fobo66.valiutchikTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/valiutchik.app/valiutchik";
+			};
+			name = Release;
+		};
+		A802D70A236F5D3900616AF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = valiutchikUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fobo66.valiutchikUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = valiutchik;
+			};
+			name = Debug;
+		};
+		A802D70B236F5D3900616AF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = valiutchikUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fobo66.valiutchikUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = valiutchik;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A802D6D1236F5D3600616AF1 /* Build configuration list for PBXProject "valiutchik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A802D701236F5D3900616AF1 /* Debug */,
+				A802D702236F5D3900616AF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A802D703236F5D3900616AF1 /* Build configuration list for PBXNativeTarget "valiutchik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A802D704236F5D3900616AF1 /* Debug */,
+				A802D705236F5D3900616AF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A802D706236F5D3900616AF1 /* Build configuration list for PBXNativeTarget "valiutchikTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A802D707236F5D3900616AF1 /* Debug */,
+				A802D708236F5D3900616AF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A802D709236F5D3900616AF1 /* Build configuration list for PBXNativeTarget "valiutchikUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A802D70A236F5D3900616AF1 /* Debug */,
+				A802D70B236F5D3900616AF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A802D6DD236F5D3600616AF1 /* valiutchik.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A802D6DE236F5D3600616AF1 /* valiutchik.xcdatamodel */,
+			);
+			currentVersion = A802D6DE236F5D3600616AF1 /* valiutchik.xcdatamodel */;
+			path = valiutchik.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A802D6CE236F5D3600616AF1 /* Project object */;
+}
