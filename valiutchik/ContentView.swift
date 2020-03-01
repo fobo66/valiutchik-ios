@@ -14,10 +14,10 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                Text(title)
-                    .fontWeight(.bold)
-                    .font(.largeTitle)
+            List {
+                CurrencyRateView(currency: .usd)
+                CurrencyRateView(currency: .eur)
+                CurrencyRateView(currency: .rur)
             }
             .padding()
             .navigationBarTitle(
