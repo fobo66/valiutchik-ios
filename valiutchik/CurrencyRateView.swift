@@ -17,7 +17,15 @@ struct CurrencyRateView: View {
     }
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack {
+                Text("USD")
+                    .bold()
+                Spacer()
+                Text("2.2")
+            }.padding()
+            Text("Deutsche Bank")
+        }
     }
 }
 
