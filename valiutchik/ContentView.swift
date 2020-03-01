@@ -9,16 +9,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let title: LocalizedStringKey = "title"
+    
     var body: some View {
         NavigationView {
             VStack {
-                Text("Valiutchik")
+                Text(title)
                     .fontWeight(.bold)
                     .font(.largeTitle)
             }
             .padding()
             .navigationBarTitle(
-                Text("Valiutchik")
+                Text(title)
             )
         }
     }
