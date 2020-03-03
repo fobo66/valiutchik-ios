@@ -99,6 +99,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40AE09D6240EA1AC00C9671F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A8D31F0A240B0BF500A1A57F /* CurrencyRateView.swift */,
+				A802D6E0236F5D3600616AF1 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		40AE09D7240EA20800C9671F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A8D31F0C240B0CED00A1A57F /* Currency.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		8EE85C75B67BD98EF8F7D47C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,12 +164,11 @@
 		A802D6D8236F5D3600616AF1 /* valiutchik */ = {
 			isa = PBXGroup;
 			children = (
-				A8D31F0A240B0BF500A1A57F /* CurrencyRateView.swift */,
+				40AE09D6240EA1AC00C9671F /* Views */,
 				A802D6D9236F5D3600616AF1 /* AppDelegate.swift */,
 				A802D6DB236F5D3600616AF1 /* SceneDelegate.swift */,
-				A802D6E0236F5D3600616AF1 /* ContentView.swift */,
 				40AE09D3240CF54600C9671F /* Localizable.strings */,
-				A8D31F0C240B0CED00A1A57F /* Currency.swift */,
+				40AE09D7240EA20800C9671F /* Entities */,
 				A802D6E2236F5D3900616AF1 /* Assets.xcassets */,
 				A802D6E7236F5D3900616AF1 /* LaunchScreen.storyboard */,
 				A802D6EA236F5D3900616AF1 /* Info.plist */,

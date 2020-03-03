@@ -9,9 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    let title: LocalizedStringKey = "title"
-    
+
     var body: some View {
         NavigationView {
             List {
@@ -21,7 +19,7 @@ struct ContentView: View {
             }
             .padding()
             .navigationBarTitle(
-                title
+                "title"
             )
         }
     }
