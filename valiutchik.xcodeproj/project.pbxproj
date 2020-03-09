@@ -19,7 +19,7 @@
 		A802D6F4236F5D3900616AF1 /* valiutchikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A802D6F3236F5D3900616AF1 /* valiutchikTests.swift */; };
 		A802D6FF236F5D3900616AF1 /* valiutchikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A802D6FE236F5D3900616AF1 /* valiutchikUITests.swift */; };
 		A8D31F0B240B0BF500A1A57F /* CurrencyRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D31F0A240B0BF500A1A57F /* CurrencyRateView.swift */; };
-		A8D31F0D240B0CED00A1A57F /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D31F0C240B0CED00A1A57F /* Currency.swift */; };
+		A8D31F0D240B0CED00A1A57F /* CurrencyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D31F0C240B0CED00A1A57F /* CurrencyLabel.swift */; };
 		B3BF739CB56856703C69F197 /* Pods_valiutchik_valiutchikUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55810E7BAFEC9E33E6321FF /* Pods_valiutchik_valiutchikUITests.framework */; };
 		B6B9F9822263FAC8E39EF753 /* Pods_valiutchik.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A89E7688EE79E77CEC20AD /* Pods_valiutchik.framework */; };
 		C106BE9C75B643DC3904C6D5 /* Pods_valiutchikTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E797C1F5973AF528648F09 /* Pods_valiutchikTests.framework */; };
@@ -67,7 +67,7 @@
 		A802D6FE236F5D3900616AF1 /* valiutchikUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = valiutchikUITests.swift; sourceTree = "<group>"; };
 		A802D700236F5D3900616AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8D31F0A240B0BF500A1A57F /* CurrencyRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRateView.swift; sourceTree = "<group>"; };
-		A8D31F0C240B0CED00A1A57F /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		A8D31F0C240B0CED00A1A57F /* CurrencyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyLabel.swift; sourceTree = "<group>"; };
 		B55810E7BAFEC9E33E6321FF /* Pods_valiutchik_valiutchikUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_valiutchik_valiutchikUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1933C1824DE433D8E36D6A3 /* Pods-valiutchikTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-valiutchikTests.release.xcconfig"; path = "Target Support Files/Pods-valiutchikTests/Pods-valiutchikTests.release.xcconfig"; sourceTree = "<group>"; };
 		E2E797C1F5973AF528648F09 /* Pods_valiutchikTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_valiutchikTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,7 +113,7 @@
 		40AE09D7240EA20800C9671F /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				A8D31F0C240B0CED00A1A57F /* Currency.swift */,
+				A8D31F0C240B0CED00A1A57F /* CurrencyLabel.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -447,7 +447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8D31F0D240B0CED00A1A57F /* Currency.swift in Sources */,
+				A8D31F0D240B0CED00A1A57F /* CurrencyLabel.swift in Sources */,
 				40AE09DB241127EB00C9671F /* CurrencyRatesDataSource.swift in Sources */,
 				A802D6DF236F5D3600616AF1 /* valiutchik.xcdatamodeld in Sources */,
 				A802D6DA236F5D3600616AF1 /* AppDelegate.swift in Sources */,

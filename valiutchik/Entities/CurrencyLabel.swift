@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Currency {
+enum CurrencyLabel {
     case eur
     case usd
     case rur

@@ -10,9 +10,9 @@ import SwiftUI
 
 struct CurrencyRateView: View {
     
-    let currency: Currency
+    let currency: CurrencyLabel
     
-    init(currency: Currency) {
+    init(currency: CurrencyLabel) {
         self.currency = currency
     }
     

@@ -8,11 +8,11 @@
 import Foundation
 
 protocol CurrencyRatesDataSource {
-    func fetchCourses(city: String) -> [Currency]
+    func fetchCourses(city: String) -> [CurrencyLabel]
 }
 
 class MyfinDataSource: CurrencyRatesDataSource {
-    func fetchCourses(city: String) -> [Currency] {
+    func fetchCourses(city: String) -> [CurrencyLabel] {
         return []
     }
 }
