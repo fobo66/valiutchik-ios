@@ -6,12 +6,15 @@
 //
 
 import Alamofire
+import Combine
 
 protocol CurrencyRatesDataSource {
     func fetchCourses(city: String)
 }
 
 class MyfinDataSource: CurrencyRatesDataSource {
+    
+    @Published var currencies = [Currency]()
     
     let baseUrl: String
     
@@ -32,7 +35,11 @@ class MyfinDataSource: CurrencyRatesDataSource {
         let url = resolveUrl(city: city)
         
         request(url).responseXMLArray(queue: DispatchQueue.global(qos: .background)) { (response: DataResponse<[Currency]>) in
-            // let currencies = response.result.value ?? []
+            let currencies = response.result.value ?? []
+            
+            currencies.forEach { currency in
+                self.currencies.append(currency)
+            }
         }
     }
     
