@@ -13,6 +13,12 @@ protocol CurrencyRatesDataSource {
 
 class MyfinDataSource: CurrencyRatesDataSource {
     
+    let baseUrl: String
+    
+    init(baseUrl: String) {
+        self.baseUrl = baseUrl
+    }
+    
     private let citiesMap = [
         "Минск": "1",
         "Витебск": "2",
@@ -23,16 +29,16 @@ class MyfinDataSource: CurrencyRatesDataSource {
     ]
     
     func fetchCourses(city: String) {
-        
         let url = resolveUrl(city: city)
-        request(url).responseXMLArray(queue: DispatchQueue.global(qos: .background), keyPath: "root") { (response: DataResponse<[Currency]>) in
-            let currencies = response.result.value
+        
+        request(url).responseXMLArray(queue: DispatchQueue.global(qos: .background)) { (response: DataResponse<[Currency]>) in
+            // let currencies = response.result.value ?? []
         }
     }
     
     private func resolveUrl(city: String) -> String {
         let cityEndpoint = citiesMap[city] ?? "1"
         
-        return "https://admin.myfin.by/outer/authXml/" + cityEndpoint
+        return baseUrl + cityEndpoint
     }
 }
