@@ -37,3 +37,18 @@ struct Currency: XMLMappable {
     
 
 }
+
+extension Currency {
+    func isValid() -> Bool {
+        return isValidRate(rate: usdBuy) &&
+        isValidRate(rate: usdSell) &&
+        isValidRate(rate: eurBuy) &&
+        isValidRate(rate: eurSell) &&
+        isValidRate(rate: rurBuy) &&
+        isValidRate(rate: rurSell)
+    }
+    
+    private func isValidRate(rate: String) -> Bool {
+        !rate.isEmpty && !(rate == "-")
+    }
+}
