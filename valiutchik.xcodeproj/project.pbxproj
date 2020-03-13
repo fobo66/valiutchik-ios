@@ -21,6 +21,7 @@
 		A8D31F0B240B0BF500A1A57F /* CurrencyRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D31F0A240B0BF500A1A57F /* CurrencyRateView.swift */; };
 		A8D31F0D240B0CED00A1A57F /* CurrencyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D31F0C240B0CED00A1A57F /* CurrencyLabel.swift */; };
 		A8D9487A2416D5E00036047A /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D948792416D5E00036047A /* Currency.swift */; };
+		A8D9487C241C16D10036047A /* LocationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D9487B241C16D10036047A /* LocationDataSource.swift */; };
 		B3BF739CB56856703C69F197 /* Pods_valiutchik_valiutchikUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55810E7BAFEC9E33E6321FF /* Pods_valiutchik_valiutchikUITests.framework */; };
 		B6B9F9822263FAC8E39EF753 /* Pods_valiutchik.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A89E7688EE79E77CEC20AD /* Pods_valiutchik.framework */; };
 		C106BE9C75B643DC3904C6D5 /* Pods_valiutchikTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E797C1F5973AF528648F09 /* Pods_valiutchikTests.framework */; };
@@ -70,6 +71,7 @@
 		A8D31F0A240B0BF500A1A57F /* CurrencyRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRateView.swift; sourceTree = "<group>"; };
 		A8D31F0C240B0CED00A1A57F /* CurrencyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyLabel.swift; sourceTree = "<group>"; };
 		A8D948792416D5E00036047A /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		A8D9487B241C16D10036047A /* LocationDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataSource.swift; sourceTree = "<group>"; };
 		B55810E7BAFEC9E33E6321FF /* Pods_valiutchik_valiutchikUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_valiutchik_valiutchikUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1933C1824DE433D8E36D6A3 /* Pods-valiutchikTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-valiutchikTests.release.xcconfig"; path = "Target Support Files/Pods-valiutchikTests/Pods-valiutchikTests.release.xcconfig"; sourceTree = "<group>"; };
 		E2E797C1F5973AF528648F09 /* Pods_valiutchikTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_valiutchikTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,7 +173,7 @@
 			children = (
 				40AE09D6240EA1AC00C9671F /* Views */,
 				A802D6D9236F5D3600616AF1 /* AppDelegate.swift */,
-				40AE09DA241127EB00C9671F /* CurrencyRatesDataSource.swift */,
+				A8D9487E241C1AB40036047A /* Datasources */,
 				A802D6DB236F5D3600616AF1 /* SceneDelegate.swift */,
 				40AE09D3240CF54600C9671F /* Localizable.strings */,
 				40AE09D7240EA20800C9671F /* Entities */,
@@ -208,6 +210,15 @@
 				A802D700236F5D3900616AF1 /* Info.plist */,
 			);
 			path = valiutchikUITests;
+			sourceTree = "<group>";
+		};
+		A8D9487E241C1AB40036047A /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				40AE09DA241127EB00C9671F /* CurrencyRatesDataSource.swift */,
+				A8D9487B241C16D10036047A /* LocationDataSource.swift */,
+			);
+			path = Datasources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -455,6 +466,7 @@
 				A802D6DF236F5D3600616AF1 /* valiutchik.xcdatamodeld in Sources */,
 				A802D6DA236F5D3600616AF1 /* AppDelegate.swift in Sources */,
 				A8D9487A2416D5E00036047A /* Currency.swift in Sources */,
+				A8D9487C241C16D10036047A /* LocationDataSource.swift in Sources */,
 				A802D6E1236F5D3600616AF1 /* ContentView.swift in Sources */,
 				A802D6DC236F5D3600616AF1 /* SceneDelegate.swift in Sources */,
 				A8D31F0B240B0BF500A1A57F /* CurrencyRateView.swift in Sources */,
@@ -672,7 +684,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8FC7C55C61388F345C596C13 /* Pods-valiutchikTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = valiutchikTests/Info.plist;
@@ -693,7 +705,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E1933C1824DE433D8E36D6A3 /* Pods-valiutchikTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = valiutchikTests/Info.plist;
@@ -714,7 +726,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4B36EE7A1C14D9FD8FE0A634 /* Pods-valiutchik-valiutchikUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = valiutchikUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -734,7 +746,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 72BC07BC44FB760CC2A515D9 /* Pods-valiutchik-valiutchikUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = valiutchikUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

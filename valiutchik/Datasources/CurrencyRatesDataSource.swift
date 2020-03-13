@@ -9,6 +9,8 @@ import Alamofire
 import Combine
 
 protocol CurrencyRatesDataSource {
+    var currencies: [Currency] { get }
+    
     func fetchCourses(city: String)
 }
 

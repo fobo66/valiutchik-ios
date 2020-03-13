@@ -9,6 +9,7 @@ target 'valiutchik' do
   pod 'Alamofire', '~> 4.9'
   pod 'XMLMapper'
   pod 'XMLMapper/Requests'
+  pod 'MapboxGeocoder.swift', '~> 0.12'
 
   target 'valiutchikTests' do
     inherit! :search_paths
