@@ -37,8 +37,12 @@ class MyfinDataSource: CurrencyRatesDataSource {
         request(url).responseXMLArray(queue: DispatchQueue.global(qos: .background)) { (response: DataResponse<[Currency]>) in
             let currencies = response.result.value ?? []
             
-            currencies.forEach { currency in
-                self.currencies.append(currency)
+            currencies
+                .filter({ (Currency) -> Bool in
+                    Currency.isValid()
+                })
+                .forEach { currency in
+                    self.currencies.append(currency)
             }
         }
     }
