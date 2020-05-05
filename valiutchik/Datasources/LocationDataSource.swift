@@ -14,7 +14,7 @@ protocol LocationDataSourceProtocol {
 
 class LocationDataSource: LocationDataSourceProtocol {
     
-     @Published var city = String()
+    @Published var city = ""
     
     private let geocoder: Geocoder
     
