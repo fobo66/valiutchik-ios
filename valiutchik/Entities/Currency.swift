@@ -49,6 +49,6 @@ extension Currency {
     }
     
     private func isValidRate(rate: String) -> Bool {
-        !rate.isEmpty && !(rate == "-")
+        !rate.isEmpty && rate != "-"
     }
 }
