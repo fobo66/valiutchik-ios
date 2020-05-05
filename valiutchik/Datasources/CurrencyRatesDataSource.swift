@@ -18,7 +18,7 @@ class MyfinDataSource: CurrencyRatesDataSource {
     
     @Published var currencies = [Currency]()
     
-    let baseUrl: String
+    private let baseUrl: String
     
     init(baseUrl: String) {
         self.baseUrl = baseUrl
