@@ -36,7 +36,9 @@ class MyfinDataSource: CurrencyRatesDataSource {
     func fetchCourses(city: String) {
         let url = resolveUrl(city: city)
         
-        request(url).responseXMLArray(queue: DispatchQueue.global(qos: .background)) { (response: DataResponse<[Currency]>) in
+        request(url)
+            .authenticate(user: "app", password: "android")
+            .responseXMLArray(queue: DispatchQueue.global(qos: .background)) { (response: DataResponse<[Currency]>) in
             let currencies = response.result.value ?? []
             
             currencies
