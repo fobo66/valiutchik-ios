@@ -7,8 +7,11 @@
 //
 
 import MapboxGeocoder
+import Combine
 
 protocol LocationDataSourceProtocol {
+    var city: String { get }
+    
     func resolveCity(lat: Double, lng: Double)
 }
 
