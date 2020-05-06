@@ -27,6 +27,8 @@ class LocationDataSource: LocationDataSourceProtocol {
     
     func resolveCity(lat: Double, lng: Double) {
         let options = ReverseGeocodeOptions(coordinate: CLLocationCoordinate2D(latitude: lat, longitude: lng))
+        options.allowedISOCountryCodes = ["BY"]
+        options.locale = Locale(identifier: "ru")
 
         geocoder.geocode(options) { (placemarks, attribution, error) in
             guard let placemark = placemarks?.first else {
