@@ -10,7 +10,7 @@
 		40AE09D5240CF54600C9671F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40AE09D3240CF54600C9671F /* Localizable.strings */; };
 		40AE09DB241127EB00C9671F /* CurrencyRatesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE09DA241127EB00C9671F /* CurrencyRatesDataSource.swift */; };
 		40B72C2C2463E8FD007D1936 /* CurrencyMappingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B72C2B2463E8FD007D1936 /* CurrencyMappingTest.swift */; };
-		40B72C2E2463EFDF007D1936 /* data.xml in Resources */ = {isa = PBXBuildFile; fileRef = 40B72C2D2463EFDF007D1936 /* data.xml */; };
+		40B72C2E2463EFDF007D1936 /* singleCurrency.xml in Resources */ = {isa = PBXBuildFile; fileRef = 40B72C2D2463EFDF007D1936 /* singleCurrency.xml */; };
 		40D97B252463F72A008BC076 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D948792416D5E00036047A /* Currency.swift */; };
 		A802D6DA236F5D3600616AF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A802D6D9236F5D3600616AF1 /* AppDelegate.swift */; };
 		A802D6DC236F5D3600616AF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A802D6DB236F5D3600616AF1 /* SceneDelegate.swift */; };
@@ -53,7 +53,7 @@
 		40AE09D4240CF54600C9671F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		40AE09DA241127EB00C9671F /* CurrencyRatesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyRatesDataSource.swift; sourceTree = "<group>"; };
 		40B72C2B2463E8FD007D1936 /* CurrencyMappingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyMappingTest.swift; sourceTree = "<group>"; };
-		40B72C2D2463EFDF007D1936 /* data.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = data.xml; sourceTree = "<group>"; };
+		40B72C2D2463EFDF007D1936 /* singleCurrency.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = singleCurrency.xml; sourceTree = "<group>"; };
 		4B36EE7A1C14D9FD8FE0A634 /* Pods-valiutchik-valiutchikUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-valiutchik-valiutchikUITests.debug.xcconfig"; path = "Target Support Files/Pods-valiutchik-valiutchikUITests/Pods-valiutchik-valiutchikUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		52D20B114BF906A23A2B07C3 /* Pods-valiutchik.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-valiutchik.debug.xcconfig"; path = "Target Support Files/Pods-valiutchik/Pods-valiutchik.debug.xcconfig"; sourceTree = "<group>"; };
 		72BC07BC44FB760CC2A515D9 /* Pods-valiutchik-valiutchikUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-valiutchik-valiutchikUITests.release.xcconfig"; path = "Target Support Files/Pods-valiutchik-valiutchikUITests/Pods-valiutchik-valiutchikUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -202,7 +202,7 @@
 		A802D6F2236F5D3900616AF1 /* valiutchikTests */ = {
 			isa = PBXGroup;
 			children = (
-				40B72C2D2463EFDF007D1936 /* data.xml */,
+				40B72C2D2463EFDF007D1936 /* singleCurrency.xml */,
 				A802D6F3236F5D3900616AF1 /* valiutchikTests.swift */,
 				A802D6F5236F5D3900616AF1 /* Info.plist */,
 				40B72C2B2463E8FD007D1936 /* CurrencyMappingTest.swift */,
@@ -349,7 +349,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40B72C2E2463EFDF007D1936 /* data.xml in Resources */,
+				40B72C2E2463EFDF007D1936 /* singleCurrency.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

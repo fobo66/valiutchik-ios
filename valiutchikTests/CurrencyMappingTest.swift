@@ -22,8 +22,8 @@ class CurrencyMappingTest: XCTestCase {
     func testFileMapping() throws {
         let bundle = Bundle(for: type(of: self))
 
-        guard let url = bundle.url(forResource: "data", withExtension: "xml") else {
-            XCTFail("Missing file with test data: data.xml")
+        guard let url = bundle.url(forResource: "singleCurrency", withExtension: "xml") else {
+            XCTFail("Missing file with test data: singleCurrency.xml")
             return
         }
         
@@ -32,6 +32,7 @@ class CurrencyMappingTest: XCTestCase {
         let parsedXml = XMLMapper<Currency>().map(XMLString: xml)
         
         XCTAssert(parsedXml != nil)
+        XCTAssert(parsedXml?.eurBuy == "2.026")
     }
 
     func testPerformanceExample() throws {
