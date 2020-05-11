@@ -134,6 +134,15 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		40D97B2B246982C1008BC076 /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				40B72C2D2463EFDF007D1936 /* singleCurrency.xml */,
+				40D97B2624696F6A008BC076 /* multipleCurrencies.xml */,
+			);
+			path = TestData;
+			sourceTree = "<group>";
+		};
 		8EE85C75B67BD98EF8F7D47C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,8 +217,7 @@
 		A802D6F2236F5D3900616AF1 /* valiutchikTests */ = {
 			isa = PBXGroup;
 			children = (
-				40B72C2D2463EFDF007D1936 /* singleCurrency.xml */,
-				40D97B2624696F6A008BC076 /* multipleCurrencies.xml */,
+				40D97B2B246982C1008BC076 /* TestData */,
 				A802D6F3236F5D3900616AF1 /* valiutchikTests.swift */,
 				A802D6F5236F5D3900616AF1 /* Info.plist */,
 				40B72C2B2463E8FD007D1936 /* CurrencyMappingTest.swift */,
