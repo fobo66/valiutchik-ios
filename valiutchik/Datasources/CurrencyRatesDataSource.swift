@@ -38,8 +38,8 @@ class MyfinDataSource: CurrencyRatesDataSource {
         
         request(url)
             .authenticate(user: "app", password: "android")
-            .responseXMLArray(queue: DispatchQueue.global(qos: .background)) { (response: DataResponse<[Currency]>) in
-            let currencies = response.result.value ?? []
+            .responseXMLObject(queue: DispatchQueue.global(qos: .background)) { (response: DataResponse<CurrenciesResponse>) in
+                let currencies = response.result.value?.currencies ?? []
             
             currencies
                 .filter({ (Currency) -> Bool in
