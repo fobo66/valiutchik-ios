@@ -1,0 +1,30 @@
+{
+  "configurations" : [
+    {
+      "id" : "B5BB9F4D-496F-4A7E-890E-83922FF2969F",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:valiutchik.xcodeproj",
+      "identifier" : "A802D6D5236F5D3600616AF1",
+      "name" : "valiutchik"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:valiutchik.xcodeproj",
+        "identifier" : "A802D6EE236F5D3900616AF1",
+        "name" : "valiutchikTests"
+      }
+    }
+  ],
+  "version" : 1
+}

@@ -31,15 +31,23 @@ class CurrencyMappingTest: XCTestCase {
         
         let parsedXml = XMLMapper<Currency>().map(XMLString: xml)
         
-        XCTAssert(parsedXml != nil)
-        XCTAssert(parsedXml?.eurBuy == "2.026")
+        XCTAssertNotNil(parsedXml)
+        XCTAssertEqual(parsedXml?.eurBuy, "2.026")
     }
+    
+    func testFileMappingToArray() throws {
+        let bundle = Bundle(for: type(of: self))
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        guard let url = bundle.url(forResource: "multipleCurrencies", withExtension: "xml") else {
+            XCTFail("Missing file with test data: multipleCurrencies.xml")
+            return
         }
+        
+        let xml = try String(contentsOf: url)
+        
+        let parsedXml = XMLMapper<CurrenciesResponse>().map(XMLString: xml)
+        
+        XCTAssertNotNil(parsedXml)
+        XCTAssertEqual(2, parsedXml?.currencies.count)
     }
-
 }

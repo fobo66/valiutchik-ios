@@ -7,4 +7,10 @@
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:valiutchik.xctestplan">
+   </FileRef>
+   <FileRef
+      location = "group:UI tests.xctestplan">
+   </FileRef>
 </Workspace>

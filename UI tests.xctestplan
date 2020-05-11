@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "6375D873-77AC-486F-BFA0-0DE89E6F7E24",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:valiutchik.xcodeproj",
+        "identifier" : "A802D6F9236F5D3900616AF1",
+        "name" : "valiutchikUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
