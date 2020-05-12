@@ -8,13 +8,7 @@
 import Alamofire
 import Combine
 
-protocol CurrencyRatesDataSource {
-    var currencies: [Currency] { get }
-    
-    func fetchCourses(city: String)
-}
-
-class MyfinDataSource: CurrencyRatesDataSource {
+class CurrencyRatesDataSource {
     
     @Published var currencies = [Currency]()
     
@@ -42,12 +36,8 @@ class MyfinDataSource: CurrencyRatesDataSource {
                 let currencies = response.result.value?.currencies ?? []
             
             currencies
-                .filter({ (Currency) -> Bool in
-                    Currency.isValid()
-                })
-                .forEach { currency in
-                    self.currencies.append(currency)
-            }
+                .filter { $0.isValid() }
+                .forEach { self.currencies.append($0) }
         }
     }
     

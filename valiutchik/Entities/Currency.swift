@@ -29,7 +29,7 @@ struct Currency: XMLMappable {
        rurSell <- map["rur_sell"]
     }
     
-    var nodeName: String! = "bank"
+    var nodeName: String!
     
     mutating func mapping(map: XMLMap) {
         bankname <- map["bankname"]

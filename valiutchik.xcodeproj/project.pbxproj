@@ -22,7 +22,6 @@
 		A802D6E3236F5D3900616AF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A802D6E2236F5D3900616AF1 /* Assets.xcassets */; };
 		A802D6E6236F5D3900616AF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A802D6E5236F5D3900616AF1 /* Preview Assets.xcassets */; };
 		A802D6E9236F5D3900616AF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A802D6E7236F5D3900616AF1 /* LaunchScreen.storyboard */; };
-		A802D6F4236F5D3900616AF1 /* valiutchikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A802D6F3236F5D3900616AF1 /* valiutchikTests.swift */; };
 		A802D6FF236F5D3900616AF1 /* valiutchikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A802D6FE236F5D3900616AF1 /* valiutchikUITests.swift */; };
 		A8D31F0B240B0BF500A1A57F /* CurrencyRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D31F0A240B0BF500A1A57F /* CurrencyRateView.swift */; };
 		A8D31F0D240B0CED00A1A57F /* CurrencyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D31F0C240B0CED00A1A57F /* CurrencyLabel.swift */; };
@@ -73,7 +72,6 @@
 		A802D6E8236F5D3900616AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A802D6EA236F5D3900616AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A802D6EF236F5D3900616AF1 /* valiutchikTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = valiutchikTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A802D6F3236F5D3900616AF1 /* valiutchikTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = valiutchikTests.swift; sourceTree = "<group>"; };
 		A802D6F5236F5D3900616AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A802D6FA236F5D3900616AF1 /* valiutchikUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = valiutchikUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A802D6FE236F5D3900616AF1 /* valiutchikUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = valiutchikUITests.swift; sourceTree = "<group>"; };
@@ -218,7 +216,6 @@
 			isa = PBXGroup;
 			children = (
 				40D97B2B246982C1008BC076 /* TestData */,
-				A802D6F3236F5D3900616AF1 /* valiutchikTests.swift */,
 				A802D6F5236F5D3900616AF1 /* Info.plist */,
 				40B72C2B2463E8FD007D1936 /* CurrencyMappingTest.swift */,
 			);
@@ -526,7 +523,6 @@
 			files = (
 				40D97B252463F72A008BC076 /* Currency.swift in Sources */,
 				40D97B2A24697E25008BC076 /* CurrenciesResponse.swift in Sources */,
-				A802D6F4236F5D3900616AF1 /* valiutchikTests.swift in Sources */,
 				40B72C2C2463E8FD007D1936 /* CurrencyMappingTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
