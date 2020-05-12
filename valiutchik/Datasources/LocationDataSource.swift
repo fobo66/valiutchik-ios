@@ -9,13 +9,7 @@
 import MapboxGeocoder
 import Combine
 
-protocol LocationDataSourceProtocol {
-    var city: String { get }
-    
-    func resolveCity(lat: Double, lng: Double)
-}
-
-class LocationDataSource: LocationDataSourceProtocol {
+class LocationDataSource {
     
     @Published var city = ""
     
