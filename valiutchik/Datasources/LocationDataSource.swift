@@ -9,28 +9,32 @@
 import MapboxGeocoder
 import Combine
 
-class LocationDataSource {
-    
-    @Published var city = ""
-    
+protocol LocationDataSourceProtocol {
+    func resolveCity(lat: Double, lng: Double) -> Future <String, Never>
+}
+
+class LocationDataSource: LocationDataSourceProtocol {
     private let geocoder: Geocoder
     
     init(geocoder: Geocoder) {
         self.geocoder = geocoder
     }
     
-    func resolveCity(lat: Double, lng: Double) {
-        let options = ReverseGeocodeOptions(coordinate: CLLocationCoordinate2D(latitude: lat, longitude: lng))
-        options.allowedISOCountryCodes = ["BY"]
-        options.locale = Locale(identifier: "ru")
+    func resolveCity(lat: Double, lng: Double) -> Future <String, Never> {
+        return Future() { promise in
+            let options = ReverseGeocodeOptions(coordinate: CLLocationCoordinate2D(latitude: lat, longitude: lng))
+            options.allowedISOCountryCodes = ["BY"]
+            options.locale = Locale(identifier: "ru")
 
-        geocoder.geocode(options) { (placemarks, attribution, error) in
-            guard let placemark = placemarks?.first else {
-                return
+            self.geocoder.geocode(options) { (placemarks, attribution, error) in
+                guard let placemark = placemarks?.first else {
+                    return
+                }
+
+               let city = placemark.postalAddress?.city ?? ""
+                
+                promise(Result.success(city))
             }
-
-            self.city = placemark.postalAddress?.city ?? ""
         }
-        
     }
 }
