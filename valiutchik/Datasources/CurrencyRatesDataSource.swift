@@ -8,9 +8,11 @@
 import Alamofire
 import Combine
 
-class CurrencyRatesDataSource {
-    
-    @Published var currencies = [Currency]()
+protocol CurrencyRatesDataSourceProtocol {
+    func fetchCourses(city: String) -> Future<[Currency], Never>
+}
+
+class CurrencyRatesDataSource: CurrencyRatesDataSourceProtocol {
     
     private let baseUrl: String
     
@@ -27,17 +29,20 @@ class CurrencyRatesDataSource {
         "Могилёв": "6"
     ]
     
-    func fetchCourses(city: String) {
-        let url = resolveUrl(city: city)
-        
-        request(url)
-            .authenticate(user: "app", password: "android")
-            .responseXMLObject(queue: DispatchQueue.global(qos: .background)) { (response: DataResponse<CurrenciesResponse>) in
-                let currencies = response.result.value?.currencies ?? []
+    func fetchCourses(city: String) -> Future<[Currency], Never> {
+        return Future() { promise in
+            let url = self.resolveUrl(city: city)
             
-            currencies
-                .filter { $0.isValid() }
-                .forEach { self.currencies.append($0) }
+            request(url)
+                .authenticate(user: "app", password: "android")
+                .responseXMLObject(queue: DispatchQueue.global(qos: .background)) { (response: DataResponse<CurrenciesResponse>) in
+                    let currencies = response.result.value?.currencies ?? []
+                
+                    let resultingCurrencies =
+                        currencies.filter { $0.isValid() }
+
+                    promise(Swift.Result.success(resultingCurrencies))
+                }
         }
     }
     
