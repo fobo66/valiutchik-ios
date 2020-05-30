@@ -37,11 +37,7 @@ class CurrencyRatesDataSource: CurrencyRatesDataSourceProtocol {
                 .authenticate(user: "app", password: "android")
                 .responseXMLObject(queue: DispatchQueue.global(qos: .background)) { (response: DataResponse<CurrenciesResponse>) in
                     let currencies = response.result.value?.currencies ?? []
-                
-                    let resultingCurrencies =
-                        currencies.filter { $0.isValid() }
-
-                    promise(Swift.Result.success(resultingCurrencies))
+                    promise(Swift.Result.success(currencies))
                 }
         }
     }

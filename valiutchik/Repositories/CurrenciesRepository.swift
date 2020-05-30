@@ -10,13 +10,15 @@ import Foundation
 
 class CurrenciesRepository {
     
-    let currencyRatesDataSource: CurrencyRatesDataSource
+    let currencyRatesDataSource: CurrencyRatesDataSourceProtocol
     
-    init(currencyRatesDataSource: CurrencyRatesDataSource) {
+    init(currencyRatesDataSource: CurrencyRatesDataSourceProtocol) {
         self.currencyRatesDataSource = currencyRatesDataSource
     }
     
-    func fetchCourses(city: String) -> Future<[Currency], Never> {
+    func fetchCourses(city: String) -> Future<Currency, Never> {
         return self.currencyRatesDataSource.fetchCourses(city: city)
+            .flatMap { $0.publisher }
+            .filter { $0.isValid() }
     }
 }
