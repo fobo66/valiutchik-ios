@@ -15,4 +15,8 @@ class CurrenciesRepository {
     init(currencyRatesDataSource: CurrencyRatesDataSource) {
         self.currencyRatesDataSource = currencyRatesDataSource
     }
+    
+    func fetchCourses(city: String) -> Future<[Currency], Never> {
+        return self.currencyRatesDataSource.fetchCourses(city: city)
+    }
 }

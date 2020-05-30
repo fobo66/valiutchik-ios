@@ -14,4 +14,8 @@ class LocationRepository {
     init(locationDataSource: LocationDataSource) {
         self.locationDataSource = locationDataSource
     }
+    
+    func resolveCity(lat: Double, lng: Double) -> Future <String, Never> {
+        return self.locationDataSource.resolveCity(lat: lat, lng: lng)
+    }
 }
