@@ -11,7 +11,7 @@ import Combine
 
 class CurrenciesRepository {
     
-    let currencyRatesDataSource: CurrencyRatesDataSourceProtocol
+    private let currencyRatesDataSource: CurrencyRatesDataSourceProtocol
     
     init(currencyRatesDataSource: CurrencyRatesDataSourceProtocol) {
         self.currencyRatesDataSource = currencyRatesDataSource

@@ -10,7 +10,7 @@ import Foundation
 import Combine
 
 class LocationRepository {
-    let locationDataSource: LocationDataSource
+    private let locationDataSource: LocationDataSource
     
     init(locationDataSource: LocationDataSource) {
         self.locationDataSource = locationDataSource
