@@ -16,7 +16,8 @@ class LocationRepository {
         self.locationDataSource = locationDataSource
     }
     
-    func resolveCity(lat: Double, lng: Double) -> Future <String, Never> {
+    func resolveCity(lat: Double, lng: Double) -> AnyPublisher<String, Never> {
         return self.locationDataSource.resolveCity(lat: lat, lng: lng)
+            .eraseToAnyPublisher()
     }
 }

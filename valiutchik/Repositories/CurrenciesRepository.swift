@@ -17,13 +17,10 @@ class CurrenciesRepository {
         self.currencyRatesDataSource = currencyRatesDataSource
     }
     
-    func fetchCourses(city: String) -> Publishers.Filter<
-            Publishers.FlatMap<
-                Publishers.Sequence<[Currency], Never>, Future<[Currency], Never>
-            >
-        > {
+    func fetchCourses(city: String) -> AnyPublisher<Currency, Never> {
         return self.currencyRatesDataSource.fetchCourses(city: city)
             .flatMap { $0.publisher }
             .filter { $0.isValid() }
+            .eraseToAnyPublisher()
     }
 }
