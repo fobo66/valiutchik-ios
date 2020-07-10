@@ -19,6 +19,8 @@
 		40D97B2F246AA67F008BC076 /* CurrenciesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D97B2D246AA67F008BC076 /* CurrenciesRepository.swift */; };
 		40D97B31246AA91E008BC076 /* LocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D97B30246AA91E008BC076 /* LocationRepository.swift */; };
 		40D97B32246AA91E008BC076 /* LocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D97B30246AA91E008BC076 /* LocationRepository.swift */; };
+		40FFF58824B8730900EFF13E /* CurrencyRatesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE09DA241127EB00C9671F /* CurrencyRatesDataSource.swift */; };
+		40FFF58924B8731D00EFF13E /* LocationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D9487B241C16D10036047A /* LocationDataSource.swift */; };
 		A802D6DA236F5D3600616AF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A802D6D9236F5D3600616AF1 /* AppDelegate.swift */; };
 		A802D6DC236F5D3600616AF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A802D6DB236F5D3600616AF1 /* SceneDelegate.swift */; };
 		A802D6DF236F5D3600616AF1 /* valiutchik.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A802D6DD236F5D3600616AF1 /* valiutchik.xcdatamodeld */; };
@@ -544,6 +546,8 @@
 				40D97B252463F72A008BC076 /* Currency.swift in Sources */,
 				40D97B2A24697E25008BC076 /* CurrenciesResponse.swift in Sources */,
 				40B72C2C2463E8FD007D1936 /* CurrencyMappingTest.swift in Sources */,
+				40FFF58824B8730900EFF13E /* CurrencyRatesDataSource.swift in Sources */,
+				40FFF58924B8731D00EFF13E /* LocationDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

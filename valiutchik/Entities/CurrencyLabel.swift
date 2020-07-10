@@ -8,8 +8,8 @@
 
 import Foundation
 
-enum CurrencyLabel {
-    case eur
-    case usd
-    case rur
+enum CurrencyLabel: String {
+    case eur = "EUR"
+    case usd = "USD"
+    case rur = "RUR"
 }

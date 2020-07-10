@@ -19,7 +19,7 @@ struct CurrencyRateView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("USD")
+                Text(self.currency.rawValue)
                     .bold()
                 Spacer()
                 Text("2.2")

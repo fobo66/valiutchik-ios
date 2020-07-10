@@ -10,9 +10,11 @@ import XCTest
 import XMLMapper
 
 class CurrencyMappingTest: XCTestCase {
+    private var bundle: Bundle!
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        try super.setUpWithError()
+        bundle = Bundle(for: type(of: self))
     }
 
     override func tearDownWithError() throws {
@@ -20,8 +22,6 @@ class CurrencyMappingTest: XCTestCase {
     }
 
     func testFileMapping() throws {
-        let bundle = Bundle(for: type(of: self))
-
         guard let url = bundle.url(forResource: "singleCurrency", withExtension: "xml") else {
             XCTFail("Missing file with test data: singleCurrency.xml")
             return
@@ -36,8 +36,6 @@ class CurrencyMappingTest: XCTestCase {
     }
     
     func testFileMappingToArray() throws {
-        let bundle = Bundle(for: type(of: self))
-
         guard let url = bundle.url(forResource: "multipleCurrencies", withExtension: "xml") else {
             XCTFail("Missing file with test data: multipleCurrencies.xml")
             return
