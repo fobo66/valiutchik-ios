@@ -26,6 +26,14 @@ struct CurrencyRateView: View {
             }.padding()
             Text("Deutsche Bank")
         }
+        .contextMenu(/*@START_MENU_TOKEN@*/ContextMenu(menuItems: {
+            Button(action: {}) {
+                Text("action_copy")
+            }
+            Button(action: {}) {
+                Text("action_open_map")
+            }
+        })/*@END_MENU_TOKEN@*/)
     }
 }
 
