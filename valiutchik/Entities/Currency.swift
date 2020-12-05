@@ -58,3 +58,16 @@ extension Currency {
         !rate.isEmpty && rate != "-"
     }
 }
+
+extension Currency : Equatable {
+    static func ==(lhs: Currency, rhs: Currency) -> Bool {
+        return
+            lhs.bankname == rhs.bankname &&
+            lhs.eurBuy == rhs.eurBuy &&
+            lhs.eurSell == rhs.eurSell &&
+            lhs.rurBuy == rhs.rurBuy &&
+            lhs.rurSell == rhs.rurSell &&
+            lhs.usdBuy == rhs.usdBuy &&
+            lhs.usdSell == rhs.usdSell
+    }
+}
