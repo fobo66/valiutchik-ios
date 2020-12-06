@@ -12,7 +12,7 @@ import Combine
 class LocationRepository {
     private let locationDataSource: LocationDataSourceProtocol
     
-    init(locationDataSource: LocationDataSourceProtocol) {
+    init(_ locationDataSource: LocationDataSourceProtocol) {
         self.locationDataSource = locationDataSource
     }
     

@@ -16,7 +16,7 @@ protocol LocationDataSourceProtocol {
 class LocationDataSource: LocationDataSourceProtocol {
     private let geocoder: Geocoder
     
-    init(geocoder: Geocoder) {
+    init(_ geocoder: Geocoder) {
         self.geocoder = geocoder
     }
     

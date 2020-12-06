@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4038B2A2257D629200D8563E /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4038B2A1257D629200D8563E /* DependencyContainer.swift */; };
 		40AE09D5240CF54600C9671F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40AE09D3240CF54600C9671F /* Localizable.strings */; };
 		40AE09DB241127EB00C9671F /* CurrencyRatesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE09DA241127EB00C9671F /* CurrencyRatesDataSource.swift */; };
 		40B72C2C2463E8FD007D1936 /* CurrencyMappingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B72C2B2463E8FD007D1936 /* CurrencyMappingTest.swift */; };
@@ -58,6 +59,7 @@
 /* Begin PBXFileReference section */
 		00A89E7688EE79E77CEC20AD /* Pods_valiutchik.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_valiutchik.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F04AD4E2772198E0825265A /* Pods-valiutchik.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-valiutchik.release.xcconfig"; path = "Target Support Files/Pods-valiutchik/Pods-valiutchik.release.xcconfig"; sourceTree = "<group>"; };
+		4038B2A1257D629200D8563E /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		40AE09D4240CF54600C9671F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		40AE09DA241127EB00C9671F /* CurrencyRatesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyRatesDataSource.swift; sourceTree = "<group>"; };
 		40B72C2B2463E8FD007D1936 /* CurrencyMappingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyMappingTest.swift; sourceTree = "<group>"; };
@@ -121,6 +123,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4038B2A0257D625600D8563E /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				4038B2A1257D629200D8563E /* DependencyContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
 		40AE09D6240EA1AC00C9671F /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +216,7 @@
 		A802D6D8236F5D3600616AF1 /* valiutchik */ = {
 			isa = PBXGroup;
 			children = (
+				4038B2A0257D625600D8563E /* DI */,
 				40D97B2C246AA654008BC076 /* Repositories */,
 				40AE09D6240EA1AC00C9671F /* Views */,
 				A802D6D9236F5D3600616AF1 /* AppDelegate.swift */,
@@ -528,6 +539,7 @@
 				40AE09DB241127EB00C9671F /* CurrencyRatesDataSource.swift in Sources */,
 				A802D6DF236F5D3600616AF1 /* valiutchik.xcdatamodeld in Sources */,
 				40D97B2E246AA67F008BC076 /* CurrenciesRepository.swift in Sources */,
+				4038B2A2257D629200D8563E /* DependencyContainer.swift in Sources */,
 				A802D6DA236F5D3600616AF1 /* AppDelegate.swift in Sources */,
 				A8D9487A2416D5E00036047A /* Currency.swift in Sources */,
 				A8D9487C241C16D10036047A /* LocationDataSource.swift in Sources */,

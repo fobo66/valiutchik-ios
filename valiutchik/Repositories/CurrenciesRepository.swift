@@ -13,7 +13,7 @@ class CurrenciesRepository {
     
     private let currencyRatesDataSource: CurrencyRatesDataSourceProtocol
     
-    init(currencyRatesDataSource: CurrencyRatesDataSourceProtocol) {
+    init(_ currencyRatesDataSource: CurrencyRatesDataSourceProtocol) {
         self.currencyRatesDataSource = currencyRatesDataSource
     }
     
