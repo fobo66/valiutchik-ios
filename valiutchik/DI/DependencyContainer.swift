@@ -13,6 +13,7 @@ struct DependencyContainer {
     // MARK: - Datasources
     lazy var locationDataSource: LocationDataSourceProtocol = LocationDataSource(Geocoder.shared)
     lazy var currencyRatesDataSource: CurrencyRatesDataSourceProtocol = CurrencyRatesDataSource(baseUrl: "https://admin.myfin.by/outer/authXml")
+    lazy var preferenceDataSource: PreferenceDataSourceProtocol = PreferenceDataSource(UserDefaults.standard)
     
     // MARK: - Repositories
     lazy var locationRepository = LocationRepository(locationDataSource)
