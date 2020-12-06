@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4038B2A2257D629200D8563E /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4038B2A1257D629200D8563E /* DependencyContainer.swift */; };
+		4038B2B0257D6C5400D8563E /* PreferenceDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4038B2AF257D6C5400D8563E /* PreferenceDataSource.swift */; };
+		4038B2B1257D6C5400D8563E /* PreferenceDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4038B2AF257D6C5400D8563E /* PreferenceDataSource.swift */; };
 		40AE09D5240CF54600C9671F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40AE09D3240CF54600C9671F /* Localizable.strings */; };
 		40AE09DB241127EB00C9671F /* CurrencyRatesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE09DA241127EB00C9671F /* CurrencyRatesDataSource.swift */; };
 		40B72C2C2463E8FD007D1936 /* CurrencyMappingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B72C2B2463E8FD007D1936 /* CurrencyMappingTest.swift */; };
@@ -60,6 +62,7 @@
 		00A89E7688EE79E77CEC20AD /* Pods_valiutchik.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_valiutchik.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F04AD4E2772198E0825265A /* Pods-valiutchik.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-valiutchik.release.xcconfig"; path = "Target Support Files/Pods-valiutchik/Pods-valiutchik.release.xcconfig"; sourceTree = "<group>"; };
 		4038B2A1257D629200D8563E /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		4038B2AF257D6C5400D8563E /* PreferenceDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceDataSource.swift; sourceTree = "<group>"; };
 		40AE09D4240CF54600C9671F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		40AE09DA241127EB00C9671F /* CurrencyRatesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyRatesDataSource.swift; sourceTree = "<group>"; };
 		40B72C2B2463E8FD007D1936 /* CurrencyMappingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyMappingTest.swift; sourceTree = "<group>"; };
@@ -265,6 +268,7 @@
 			children = (
 				40AE09DA241127EB00C9671F /* CurrencyRatesDataSource.swift */,
 				A8D9487B241C16D10036047A /* LocationDataSource.swift */,
+				4038B2AF257D6C5400D8563E /* PreferenceDataSource.swift */,
 			);
 			path = Datasources;
 			sourceTree = "<group>";
@@ -536,6 +540,7 @@
 				40D97B31246AA91E008BC076 /* LocationRepository.swift in Sources */,
 				A8D31F0D240B0CED00A1A57F /* CurrencyLabel.swift in Sources */,
 				40D97B2924697E25008BC076 /* CurrenciesResponse.swift in Sources */,
+				4038B2B0257D6C5400D8563E /* PreferenceDataSource.swift in Sources */,
 				40AE09DB241127EB00C9671F /* CurrencyRatesDataSource.swift in Sources */,
 				A802D6DF236F5D3600616AF1 /* valiutchik.xcdatamodeld in Sources */,
 				40D97B2E246AA67F008BC076 /* CurrenciesRepository.swift in Sources */,
@@ -560,6 +565,7 @@
 				40B72C2C2463E8FD007D1936 /* CurrencyMappingTest.swift in Sources */,
 				40FFF58824B8730900EFF13E /* CurrencyRatesDataSource.swift in Sources */,
 				40FFF58924B8731D00EFF13E /* LocationDataSource.swift in Sources */,
+				4038B2B1257D6C5400D8563E /* PreferenceDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
