@@ -1,6 +1,6 @@
 //
 //  CurrencyRatesDataSource.swift
-//  
+//
 //
 //  Created by Andrei Mukamolau on 3/5/20.
 //
@@ -13,7 +13,6 @@ protocol CurrencyRatesDataSourceProtocol {
 }
 
 class CurrencyRatesDataSource: CurrencyRatesDataSourceProtocol {
-    
     private let baseUrl: String
     
     init(baseUrl: String) {
@@ -30,7 +29,7 @@ class CurrencyRatesDataSource: CurrencyRatesDataSourceProtocol {
     ]
     
     func fetchCourses(city: String) -> Future<[Currency], Never> {
-        return Future() { promise in
+        return Future { promise in
             let url = self.resolveUrl(city: city)
             
             request(url)

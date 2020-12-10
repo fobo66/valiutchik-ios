@@ -10,7 +10,6 @@ import Foundation
 import XMLMapper
 
 struct Currency: XMLMappable {
-    
     var bankname: String! = ""
     var usdBuy: String! = ""
     var usdSell: String! = ""
@@ -18,19 +17,19 @@ struct Currency: XMLMappable {
     var eurSell: String! = ""
     var rurBuy: String! = ""
     var rurSell: String! = ""
-    
+
     init?(map: XMLMap) {
-       bankname <- map["bankname"]
-       usdBuy <- map["usd_buy"]
-       usdSell <- map["usd_sell"]
-       eurBuy <- map["eur_buy"]
-       eurSell <- map["eur_sell"]
-       rurBuy <- map["rur_buy"]
-       rurSell <- map["rur_sell"]
+        bankname <- map["bankname"]
+        usdBuy <- map["usd_buy"]
+        usdSell <- map["usd_sell"]
+        eurBuy <- map["eur_buy"]
+        eurSell <- map["eur_sell"]
+        rurBuy <- map["rur_buy"]
+        rurSell <- map["rur_sell"]
     }
-    
+
     var nodeName: String!
-    
+
     mutating func mapping(map: XMLMap) {
         bankname <- map["bankname"]
         usdBuy <- map["usd_buy"]
@@ -40,26 +39,24 @@ struct Currency: XMLMappable {
         rurBuy <- map["rur_buy"]
         rurSell <- map["rur_sell"]
     }
-    
-
 }
 
 extension Currency {
     func isValid() -> Bool {
         return isValidRate(rate: usdBuy) &&
-        isValidRate(rate: usdSell) &&
-        isValidRate(rate: eurBuy) &&
-        isValidRate(rate: eurSell) &&
-        isValidRate(rate: rurBuy) &&
-        isValidRate(rate: rurSell)
+            isValidRate(rate: usdSell) &&
+            isValidRate(rate: eurBuy) &&
+            isValidRate(rate: eurSell) &&
+            isValidRate(rate: rurBuy) &&
+            isValidRate(rate: rurSell)
     }
-    
+
     private func isValidRate(rate: String) -> Bool {
         !rate.isEmpty && rate != "-"
     }
 }
 
-extension Currency : Equatable {
+extension Currency: Equatable {
     static func ==(lhs: Currency, rhs: Currency) -> Bool {
         return
             lhs.bankname == rhs.bankname &&

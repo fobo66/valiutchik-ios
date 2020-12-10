@@ -6,16 +6,16 @@
 //  Copyright © 2020 Andrei Mukamolau. All rights reserved.
 //
 
-import Foundation
 import Combine
+import Foundation
 
 class LocationRepository {
     private let locationDataSource: LocationDataSourceProtocol
-    
+
     init(_ locationDataSource: LocationDataSourceProtocol) {
         self.locationDataSource = locationDataSource
     }
-    
+
     func resolveCity(lat: Double, lng: Double) -> AnyPublisher<String, Never> {
         return self.locationDataSource.resolveCity(lat: lat, lng: lng)
             .eraseToAnyPublisher()

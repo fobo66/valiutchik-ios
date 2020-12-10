@@ -6,33 +6,33 @@
 //  Copyright © 2020 Andrei Mukamolau. All rights reserved.
 //
 
-import MapboxGeocoder
 import Combine
+import MapboxGeocoder
 
 protocol LocationDataSourceProtocol {
-    func resolveCity(lat: Double, lng: Double) -> Future <String, Never>
+    func resolveCity(lat: Double, lng: Double) -> Future<String, Never>
 }
 
 class LocationDataSource: LocationDataSourceProtocol {
     private let geocoder: Geocoder
-    
+
     init(_ geocoder: Geocoder) {
         self.geocoder = geocoder
     }
-    
-    func resolveCity(lat: Double, lng: Double) -> Future <String, Never> {
-        return Future() { promise in
+
+    func resolveCity(lat: Double, lng: Double) -> Future<String, Never> {
+        return Future { promise in
             let options = ReverseGeocodeOptions(coordinate: CLLocationCoordinate2D(latitude: lat, longitude: lng))
             options.allowedISOCountryCodes = ["BY"]
             options.locale = Locale(identifier: "ru")
 
-            self.geocoder.geocode(options) { (placemarks, attribution, error) in
+            self.geocoder.geocode(options) { placemarks, _, _ in
                 guard let placemark = placemarks?.first else {
                     return
                 }
 
-               let city = placemark.postalAddress?.city ?? ""
-                
+                let city = placemark.postalAddress?.city ?? ""
+
                 promise(Result.success(city))
             }
         }

@@ -14,17 +14,16 @@ protocol PreferenceDataSourceProtocol {
 }
 
 class PreferenceDataSource: PreferenceDataSourceProtocol {
-
     private let userDefaults: UserDefaults
-    
+
     init(_ userDefaults: UserDefaults) {
         self.userDefaults = userDefaults
     }
-    
+
     func loadString(for key: String) -> String {
         return userDefaults.string(forKey: key) ?? ""
     }
-    
+
     func saveString(key: String, value: String) {
         userDefaults.setValue(value, forKey: key)
     }
