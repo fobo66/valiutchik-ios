@@ -1,6 +1,6 @@
 PODS:
   - Alamofire (4.9.1)
-  - MapboxGeocoder.swift (0.13.0)
+  - MapboxGeocoder.swift (0.14.0)
   - XMLMapper (1.6.1):
     - XMLMapper/Core (= 1.6.1)
   - XMLMapper/Core (1.6.1)
@@ -22,7 +22,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  MapboxGeocoder.swift: b128b1e811b440aa59ba7b5a249a1e3212d55700
+  MapboxGeocoder.swift: a288e92ec13fbd65bbdfd7c54c61b0e80d19e734
   XMLMapper: 758f91d48600afe51e1e9a973cbe779df7a20d99
 
 PODFILE CHECKSUM: a57127e760afe715cec040affcbb7237f806cbce
