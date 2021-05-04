@@ -10,6 +10,7 @@ target 'valiutchik' do
   pod 'XMLMapper'
   pod 'XMLMapper/Requests'
   pod 'MapboxGeocoder.swift', '~> 0.12'
+  pod 'NeedleFoundation'
 
   target 'valiutchikTests' do
     inherit! :search_paths
