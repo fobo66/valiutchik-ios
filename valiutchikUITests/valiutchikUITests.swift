@@ -34,7 +34,7 @@ class valiutchikUITests: XCTestCase {
 
     func testLaunchPerformance() {
         // This measures how long it takes to launch your application from the home screen.
-        measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
+        measure(metrics: [XCTApplicationLaunchMetric.init()]) {
             XCUIApplication().launch()
         }
     }
