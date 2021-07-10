@@ -289,6 +289,7 @@
 				A802D6D4236F5D3600616AF1 /* Resources */,
 				39C7E868197F88816C0F62F8 /* [CP] Embed Pods Frameworks */,
 				A8D9487F24249C730036047A /* Load Mapbox token */,
+				40FD49FE269A371E00FC47C3 /* Needle Generate */,
 			);
 			buildRules = (
 			);
@@ -428,6 +429,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-valiutchik/Pods-valiutchik-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		40FD49FE269A371E00FC47C3 /* Needle Generate */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Needle Generate";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nneedle generate valiutchik/DI/NeedleGenerated.swift valiutchik/\n";
 		};
 		57AB1347A3F3AFDE11B3FC90 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
