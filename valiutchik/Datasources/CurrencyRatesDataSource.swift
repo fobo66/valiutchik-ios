@@ -19,7 +19,7 @@ class CurrencyRatesDataSource: CurrencyRatesDataSourceProtocol {
         self.baseUrl = baseUrl
     }
     
-    private let citiesMap = [
+    private lazy var citiesMap = [
         "Минск": "1",
         "Витебск": "2",
         "Гомель": "3",
