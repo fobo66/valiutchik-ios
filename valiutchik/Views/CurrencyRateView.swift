@@ -10,21 +10,27 @@ import SwiftUI
 
 struct CurrencyRateView: View {
     let currency: CurrencyLabel
-
+    
     init(currency: CurrencyLabel) {
         self.currency = currency
     }
-
+    
     var body: some View {
-        VStack {
-            HStack {
-                Text(self.currency.rawValue)
-                    .bold()
-                Spacer()
-                Text("2.2")
-            }.padding()
+        VStack(alignment: .leading) {
+            Text(self.currency.rawValue)
+                .font(.headline)
+                .foregroundColor(.secondary)
+                .bold()
+            Text("2.2")
+                .font(.title)
+                .fontWeight(.black)
+                .foregroundColor(.primary)
             Text("Deutsche Bank")
+                .font(.caption)
+                .foregroundColor(.secondary)
         }
+        .cornerRadius(10)
+        .padding([.top, .horizontal])
         .contextMenu(/*@START_MENU_TOKEN@*/ContextMenu(menuItems: {
             Button(action: {}) {
                 Text("action_copy")
