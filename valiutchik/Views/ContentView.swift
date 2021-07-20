@@ -16,7 +16,6 @@ struct ContentView: View {
                 CurrencyRateView(currency: .eur)
                 CurrencyRateView(currency: .rur)
             }
-            .padding()
             .navigationBarTitle(
                 "title"
             )

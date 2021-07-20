@@ -16,18 +16,23 @@ struct CurrencyRateView: View {
     }
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Text(self.currency.rawValue)
-                .font(.headline)
-                .foregroundColor(.secondary)
-                .bold()
-            Text("2.2")
-                .font(.title)
-                .fontWeight(.black)
-                .foregroundColor(.primary)
-            Text("Deutsche Bank")
-                .font(.caption)
-                .foregroundColor(.secondary)
+        HStack {
+            VStack(alignment: .leading) {
+                Text(self.currency.rawValue)
+                    .font(.headline)
+                    .foregroundColor(.secondary)
+                    .bold()
+                Text("2.2")
+                    .font(.title)
+                    .fontWeight(.black)
+                    .foregroundColor(.primary)
+                    .padding([.vertical])
+                Label("Deutsche Bank", systemImage: "building.columns.fill")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+            }
+            .padding()
+            Spacer()
         }
         .cornerRadius(10)
         .padding([.top, .horizontal])
