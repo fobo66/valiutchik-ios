@@ -6,7 +6,7 @@ target 'valiutchik' do
   use_frameworks!
 
   # Pods for valiutchik
-  pod 'Alamofire', '~> 4.9'
+  pod 'Alamofire', '~> 5.4'
   pod 'XMLMapper'
   pod 'XMLMapper/Requests'
   pod 'MapboxGeocoder.swift', '~> 0.12'

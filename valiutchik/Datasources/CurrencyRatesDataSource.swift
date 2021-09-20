@@ -32,10 +32,10 @@ class CurrencyRatesDataSource: CurrencyRatesDataSourceProtocol {
         return Future { promise in
             let url = self.resolveUrl(city: city)
             
-            request(url)
-                .authenticate(user: "app", password: "android")
-                .responseXMLObject(queue: DispatchQueue.global(qos: .background)) { (response: DataResponse<CurrenciesResponse>) in
-                    let currencies = response.result.value?.currencies ?? []
+            AF.request(url)
+                .authenticate(username: "app", password: "android")
+                .responseXMLObject(queue: DispatchQueue.global(qos: .background)) { (response: DataResponse<CurrenciesResponse, AFError>) in
+                    let currencies = response.value?.currencies ?? []
                     promise(Swift.Result.success(currencies))
                 }
         }

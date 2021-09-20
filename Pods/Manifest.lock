@@ -1,16 +1,16 @@
 PODS:
-  - Alamofire (4.9.1)
+  - Alamofire (5.4.3)
   - MapboxGeocoder.swift (0.14.0)
   - NeedleFoundation (0.17.2)
-  - XMLMapper (1.6.1):
-    - XMLMapper/Core (= 1.6.1)
-  - XMLMapper/Core (1.6.1)
-  - XMLMapper/Requests (1.6.1):
-    - Alamofire (~> 4.9)
+  - XMLMapper (2.0.0):
+    - XMLMapper/Core (= 2.0.0)
+  - XMLMapper/Core (2.0.0)
+  - XMLMapper/Requests (2.0.0):
+    - Alamofire (~> 5.4)
     - XMLMapper/Core
 
 DEPENDENCIES:
-  - Alamofire (~> 4.9)
+  - Alamofire (~> 5.4)
   - MapboxGeocoder.swift (~> 0.12)
   - NeedleFoundation
   - XMLMapper
@@ -24,11 +24,11 @@ SPEC REPOS:
     - XMLMapper
 
 SPEC CHECKSUMS:
-  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   MapboxGeocoder.swift: a288e92ec13fbd65bbdfd7c54c61b0e80d19e734
   NeedleFoundation: 36cfaea9ae9eb527a796f5c1df19296c722666b8
-  XMLMapper: 758f91d48600afe51e1e9a973cbe779df7a20d99
+  XMLMapper: 45ff16367092620b0b4adbc5e42dd8db6ebb5e0d
 
-PODFILE CHECKSUM: a21d86eb134d690aa031b1ac1c6688eeba8c43d2
+PODFILE CHECKSUM: 2d5c700e110755edb3870844cd89e540ef97289f
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2
