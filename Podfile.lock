@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.4.3)
+  - Alamofire (5.4.4)
   - MapboxGeocoder.swift (0.14.0)
   - NeedleFoundation (0.17.2)
   - XMLMapper (2.0.0):
@@ -24,7 +24,7 @@ SPEC REPOS:
     - XMLMapper
 
 SPEC CHECKSUMS:
-  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
   MapboxGeocoder.swift: a288e92ec13fbd65bbdfd7c54c61b0e80d19e734
   NeedleFoundation: 36cfaea9ae9eb527a796f5c1df19296c722666b8
   XMLMapper: 45ff16367092620b0b4adbc5e42dd8db6ebb5e0d
