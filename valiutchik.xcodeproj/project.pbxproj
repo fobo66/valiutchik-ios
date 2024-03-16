@@ -28,6 +28,16 @@
 		40E3CCF42BA5D71300F34B2D /* NeedleFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 40E3CCF32BA5D71300F34B2D /* NeedleFoundation */; };
 		40E3CCF62BA5D71300F34B2D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 40E3CCF52BA5D71300F34B2D /* Alamofire */; };
 		40E3CCF82BA5D71300F34B2D /* XMLMapper in Frameworks */ = {isa = PBXBuildFile; productRef = 40E3CCF72BA5D71300F34B2D /* XMLMapper */; };
+		40E3CD062BA5DFD500F34B2D /* DataRequest+XMLMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3CCFB2BA5DFD500F34B2D /* DataRequest+XMLMapper.swift */; };
+		40E3CD072BA5DFD500F34B2D /* SOAPBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3CCFC2BA5DFD500F34B2D /* SOAPBody.swift */; };
+		40E3CD082BA5DFD500F34B2D /* SOAPEnvelope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3CCFD2BA5DFD500F34B2D /* SOAPEnvelope.swift */; };
+		40E3CD092BA5DFD500F34B2D /* SOAPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3CCFE2BA5DFD500F34B2D /* SOAPHeader.swift */; };
+		40E3CD0A2BA5DFD500F34B2D /* SOAPInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3CCFF2BA5DFD500F34B2D /* SOAPInformation.swift */; };
+		40E3CD0B2BA5DFD500F34B2D /* SOAPMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3CD002BA5DFD500F34B2D /* SOAPMessage.swift */; };
+		40E3CD0C2BA5DFD500F34B2D /* SOAPVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3CD012BA5DFD500F34B2D /* SOAPVersion.swift */; };
+		40E3CD0D2BA5DFD500F34B2D /* XMLEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3CD022BA5DFD500F34B2D /* XMLEncoding.swift */; };
+		40E3CD0E2BA5DFD500F34B2D /* XMLMappableArrayResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3CD032BA5DFD500F34B2D /* XMLMappableArrayResponseSerializer.swift */; };
+		40E3CD0F2BA5DFD500F34B2D /* XMLMappableResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3CD042BA5DFD500F34B2D /* XMLMappableResponseSerializer.swift */; };
 		40FD49FD269A366700FC47C3 /* NeedleGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FD49FC269A366700FC47C3 /* NeedleGenerated.swift */; };
 		40FFF58824B8730900EFF13E /* CurrencyRatesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE09DA241127EB00C9671F /* CurrencyRatesDataSource.swift */; };
 		40FFF58924B8731D00EFF13E /* LocationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D9487B241C16D10036047A /* LocationDataSource.swift */; };
@@ -73,6 +83,16 @@
 		40D97B2824697E25008BC076 /* CurrenciesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesResponse.swift; sourceTree = "<group>"; };
 		40D97B2D246AA67F008BC076 /* CurrenciesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesRepository.swift; sourceTree = "<group>"; };
 		40D97B30246AA91E008BC076 /* LocationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRepository.swift; sourceTree = "<group>"; };
+		40E3CCFB2BA5DFD500F34B2D /* DataRequest+XMLMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataRequest+XMLMapper.swift"; sourceTree = "<group>"; };
+		40E3CCFC2BA5DFD500F34B2D /* SOAPBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOAPBody.swift; sourceTree = "<group>"; };
+		40E3CCFD2BA5DFD500F34B2D /* SOAPEnvelope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOAPEnvelope.swift; sourceTree = "<group>"; };
+		40E3CCFE2BA5DFD500F34B2D /* SOAPHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOAPHeader.swift; sourceTree = "<group>"; };
+		40E3CCFF2BA5DFD500F34B2D /* SOAPInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOAPInformation.swift; sourceTree = "<group>"; };
+		40E3CD002BA5DFD500F34B2D /* SOAPMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOAPMessage.swift; sourceTree = "<group>"; };
+		40E3CD012BA5DFD500F34B2D /* SOAPVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOAPVersion.swift; sourceTree = "<group>"; };
+		40E3CD022BA5DFD500F34B2D /* XMLEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLEncoding.swift; sourceTree = "<group>"; };
+		40E3CD032BA5DFD500F34B2D /* XMLMappableArrayResponseSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLMappableArrayResponseSerializer.swift; sourceTree = "<group>"; };
+		40E3CD042BA5DFD500F34B2D /* XMLMappableResponseSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLMappableResponseSerializer.swift; sourceTree = "<group>"; };
 		40FD49FC269A366700FC47C3 /* NeedleGenerated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
 		A802D6D6236F5D3600616AF1 /* valiutchik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = valiutchik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A802D6D9236F5D3600616AF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -178,6 +198,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		40E3CD052BA5DFD500F34B2D /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				40E3CCFB2BA5DFD500F34B2D /* DataRequest+XMLMapper.swift */,
+				40E3CCFC2BA5DFD500F34B2D /* SOAPBody.swift */,
+				40E3CCFD2BA5DFD500F34B2D /* SOAPEnvelope.swift */,
+				40E3CCFE2BA5DFD500F34B2D /* SOAPHeader.swift */,
+				40E3CCFF2BA5DFD500F34B2D /* SOAPInformation.swift */,
+				40E3CD002BA5DFD500F34B2D /* SOAPMessage.swift */,
+				40E3CD012BA5DFD500F34B2D /* SOAPVersion.swift */,
+				40E3CD022BA5DFD500F34B2D /* XMLEncoding.swift */,
+				40E3CD032BA5DFD500F34B2D /* XMLMappableArrayResponseSerializer.swift */,
+				40E3CD042BA5DFD500F34B2D /* XMLMappableResponseSerializer.swift */,
+			);
+			name = Requests;
+			path = valiutchik/Requests;
+			sourceTree = "<group>";
+		};
 		8EE85C75B67BD98EF8F7D47C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +226,7 @@
 		A802D6CD236F5D3600616AF1 = {
 			isa = PBXGroup;
 			children = (
+				40E3CD052BA5DFD500F34B2D /* Requests */,
 				A802D6D8236F5D3600616AF1 /* valiutchik */,
 				A802D6F2236F5D3900616AF1 /* valiutchikTests */,
 				A802D6FD236F5D3900616AF1 /* valiutchikUITests */,
@@ -458,17 +497,27 @@
 			files = (
 				40D97B31246AA91E008BC076 /* LocationRepository.swift in Sources */,
 				A8D31F0D240B0CED00A1A57F /* CurrencyLabel.swift in Sources */,
+				40E3CD092BA5DFD500F34B2D /* SOAPHeader.swift in Sources */,
 				40D97B2924697E25008BC076 /* CurrenciesResponse.swift in Sources */,
 				4038B2B0257D6C5400D8563E /* PreferenceDataSource.swift in Sources */,
+				40E3CD0C2BA5DFD500F34B2D /* SOAPVersion.swift in Sources */,
+				40E3CD0E2BA5DFD500F34B2D /* XMLMappableArrayResponseSerializer.swift in Sources */,
 				40AE09DB241127EB00C9671F /* CurrencyRatesDataSource.swift in Sources */,
 				A802D6DF236F5D3600616AF1 /* valiutchik.xcdatamodeld in Sources */,
+				40E3CD0B2BA5DFD500F34B2D /* SOAPMessage.swift in Sources */,
 				40D97B2E246AA67F008BC076 /* CurrenciesRepository.swift in Sources */,
 				4038B2A2257D629200D8563E /* DependencyContainer.swift in Sources */,
+				40E3CD0A2BA5DFD500F34B2D /* SOAPInformation.swift in Sources */,
+				40E3CD0F2BA5DFD500F34B2D /* XMLMappableResponseSerializer.swift in Sources */,
 				A802D6DA236F5D3600616AF1 /* AppDelegate.swift in Sources */,
 				A8D9487A2416D5E00036047A /* Currency.swift in Sources */,
+				40E3CD082BA5DFD500F34B2D /* SOAPEnvelope.swift in Sources */,
+				40E3CD062BA5DFD500F34B2D /* DataRequest+XMLMapper.swift in Sources */,
+				40E3CD0D2BA5DFD500F34B2D /* XMLEncoding.swift in Sources */,
 				A8D9487C241C16D10036047A /* LocationDataSource.swift in Sources */,
 				A802D6E1236F5D3600616AF1 /* ContentView.swift in Sources */,
 				A802D6DC236F5D3600616AF1 /* SceneDelegate.swift in Sources */,
+				40E3CD072BA5DFD500F34B2D /* SOAPBody.swift in Sources */,
 				A8D31F0B240B0BF500A1A57F /* CurrencyRateView.swift in Sources */,
 				40FD49FD269A366700FC47C3 /* NeedleGenerated.swift in Sources */,
 			);

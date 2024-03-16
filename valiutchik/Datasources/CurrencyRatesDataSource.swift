@@ -8,6 +8,7 @@
 import Alamofire
 import Combine
 import XMLMapper
+import Dispatch
 
 protocol CurrencyRatesDataSourceProtocol {
     func fetchCourses(city: String) -> Future<[Currency], Never>

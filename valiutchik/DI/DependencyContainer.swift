@@ -17,9 +17,7 @@ struct DependencyContainer {
     )
     
     // MARK: - Datasources
-    lazy var locationDataSource: LocationDataSourceProtocol = LocationDataSource(
-        geocoder: reverseGeocoderApi
-    )
+    lazy var locationDataSource: LocationDataSourceProtocol = LocationDataSource(reverseGeocoderApi)
     lazy var currencyRatesDataSource: CurrencyRatesDataSourceProtocol = CurrencyRatesDataSource(baseUrl: "https://admin.myfin.by/outer/authXml")
     lazy var preferenceDataSource: PreferenceDataSourceProtocol = PreferenceDataSource(UserDefaults.standard)
     
