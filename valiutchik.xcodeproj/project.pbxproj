@@ -274,7 +274,7 @@
 				A802D6D2236F5D3600616AF1 /* Sources */,
 				A802D6D3236F5D3600616AF1 /* Frameworks */,
 				A802D6D4236F5D3600616AF1 /* Resources */,
-				A8D9487F24249C730036047A /* Load Mapbox token */,
+				A8D9487F24249C730036047A /* Load TomTom token */,
 				40FD49FE269A371E00FC47C3 /* Needle Generate */,
 			);
 			buildRules = (
@@ -428,7 +428,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nneedle generate valiutchik/DI/NeedleGenerated.swift valiutchik/\n";
 		};
-		A8D9487F24249C730036047A /* Load Mapbox token */ = {
+		A8D9487F24249C730036047A /* Load TomTom token */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -440,14 +440,14 @@
 				"~/.mapbox",
 				"~/mapbox",
 			);
-			name = "Load Mapbox token";
+			name = "Load TomTom token";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Look for a global file named 'mapbox' or '.mapbox' within the home directory\ntoken_file=~/.mapbox\ntoken_file2=~/mapbox\ntoken=\"$(cat $token_file 2>/dev/null || cat $token_file2 2>/dev/null)\"\nif [ \"$token\" ]; then\n  plutil -replace MGLMapboxAccessToken -string $token \"$TARGET_BUILD_DIR/$INFOPLIST_PATH\"\nelse\n  echo 'warning: Missing Mapbox access token'\n  open 'https://account.mapbox.com/access-tokens/'\n  echo \"warning: Get an access token from <https://account.mapbox.com/access-tokens/>, then create a new file at $token_file or $token_file2 that contains the access token.\"\nfi\n";
+			shellScript = "# Look for a global file named 'mapbox' or '.mapbox' within the home directory\ntoken_file=~/.tomtom\ntoken_file2=~/tomtom\ntoken=\"$(cat $token_file 2>/dev/null || cat $token_file2 2>/dev/null)\"\nif [ \"$token\" ]; then\n  plutil -replace TTTomTomAccessToken -string $token \"$TARGET_BUILD_DIR/$INFOPLIST_PATH\"\nelse\n  echo 'warning: Missing TomTom access token'\n  open 'https://developer.tomtom.com/user/me/apps'\n  echo \"warning: Get an access token from <https://developer.tomtom.com/user/me/apps>, then create a new file at $token_file or $token_file2 that contains the access token.\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

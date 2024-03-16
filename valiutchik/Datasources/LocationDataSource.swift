@@ -7,32 +7,37 @@
 //
 
 import Combine
-import MapboxGeocoder
+import Foundation
+import CoreLocation
+import TomTomSDKCommon
+import TomTomSDKReverseGeocoder
+import TomTomSDKReverseGeocoderOnline
 
 protocol LocationDataSourceProtocol {
     func resolveCity(lat: Double, lng: Double) -> Future<String, Never>
 }
 
 class LocationDataSource: LocationDataSourceProtocol {
-    private let geocoder: Geocoder
+    private let geocoder: TomTomSDKReverseGeocoder.ReverseGeocoder?
 
-    init(_ geocoder: Geocoder) {
+    init(_ geocoder: TomTomSDKReverseGeocoder.ReverseGeocoder?) {
         self.geocoder = geocoder
     }
 
     func resolveCity(lat: Double, lng: Double) -> Future<String, Never> {
         return Future { promise in
-            let options = ReverseGeocodeOptions(coordinate: CLLocationCoordinate2D(latitude: lat, longitude: lng))
-            options.allowedISOCountryCodes = ["BY"]
-            options.locale = Locale(identifier: "ru")
+            guard let geocoder = self.geocoder else { return }
+            let coordinate = CLLocationCoordinate2D(latitude: lat, longitude: lng)
+            let options = ReverseGeocoderOptions(
+                position: coordinate,
+                locale: Locale(identifier: "ru")
 
-            self.geocoder.geocode(options) { placemarks, _, _ in
-                guard let placemark = placemarks?.first else {
-                    return
-                }
+            )
 
-                let city = placemark.postalAddress?.city ?? ""
-
+            geocoder.reverseGeocode(options: options) { result in
+                guard case let .success(response) = result,
+                let address = response.places.first?.place.address else { return }
+                let city = address.countrySecondarySubdivision ?? ""
                 promise(Result.success(city))
             }
         }
