@@ -7,7 +7,9 @@
 //
 
 import Foundation
-import MapboxGeocoder
+import TomTomSDKCommon
+import TomTomSDKReverseGeocoder
+import TomTomSDKReverseGeocoderOnline
 
 struct DependencyContainer {
     // MARK: - Datasources

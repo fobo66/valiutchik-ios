@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,12 @@
 		40D97B2F246AA67F008BC076 /* CurrenciesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D97B2D246AA67F008BC076 /* CurrenciesRepository.swift */; };
 		40D97B31246AA91E008BC076 /* LocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D97B30246AA91E008BC076 /* LocationRepository.swift */; };
 		40D97B32246AA91E008BC076 /* LocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D97B30246AA91E008BC076 /* LocationRepository.swift */; };
+		40E3CCED2BA5D68600F34B2D /* TomTomSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 40E3CCEC2BA5D68600F34B2D /* TomTomSDKCommon */; };
+		40E3CCF02BA5D6F900F34B2D /* TomTomSDKReverseGeocoder in Frameworks */ = {isa = PBXBuildFile; productRef = 40E3CCEF2BA5D6F900F34B2D /* TomTomSDKReverseGeocoder */; };
+		40E3CCF22BA5D6F900F34B2D /* TomTomSDKReverseGeocoderOnline in Frameworks */ = {isa = PBXBuildFile; productRef = 40E3CCF12BA5D6F900F34B2D /* TomTomSDKReverseGeocoderOnline */; };
+		40E3CCF42BA5D71300F34B2D /* NeedleFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 40E3CCF32BA5D71300F34B2D /* NeedleFoundation */; };
+		40E3CCF62BA5D71300F34B2D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 40E3CCF52BA5D71300F34B2D /* Alamofire */; };
+		40E3CCF82BA5D71300F34B2D /* XMLMapper in Frameworks */ = {isa = PBXBuildFile; productRef = 40E3CCF72BA5D71300F34B2D /* XMLMapper */; };
 		40FD49FD269A366700FC47C3 /* NeedleGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FD49FC269A366700FC47C3 /* NeedleGenerated.swift */; };
 		40FFF58824B8730900EFF13E /* CurrencyRatesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE09DA241127EB00C9671F /* CurrencyRatesDataSource.swift */; };
 		40FFF58924B8731D00EFF13E /* LocationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D9487B241C16D10036047A /* LocationDataSource.swift */; };
@@ -37,9 +43,6 @@
 		A8D31F0D240B0CED00A1A57F /* CurrencyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D31F0C240B0CED00A1A57F /* CurrencyLabel.swift */; };
 		A8D9487A2416D5E00036047A /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D948792416D5E00036047A /* Currency.swift */; };
 		A8D9487C241C16D10036047A /* LocationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D9487B241C16D10036047A /* LocationDataSource.swift */; };
-		B3BF739CB56856703C69F197 /* Pods_valiutchik_valiutchikUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55810E7BAFEC9E33E6321FF /* Pods_valiutchik_valiutchikUITests.framework */; };
-		B6B9F9822263FAC8E39EF753 /* Pods_valiutchik.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A89E7688EE79E77CEC20AD /* Pods_valiutchik.framework */; };
-		C106BE9C75B643DC3904C6D5 /* Pods_valiutchikTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E797C1F5973AF528648F09 /* Pods_valiutchikTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +63,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00A89E7688EE79E77CEC20AD /* Pods_valiutchik.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_valiutchik.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F04AD4E2772198E0825265A /* Pods-valiutchik.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-valiutchik.release.xcconfig"; path = "Target Support Files/Pods-valiutchik/Pods-valiutchik.release.xcconfig"; sourceTree = "<group>"; };
 		4038B2A1257D629200D8563E /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		4038B2AF257D6C5400D8563E /* PreferenceDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceDataSource.swift; sourceTree = "<group>"; };
 		40AE09D4240CF54600C9671F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -73,10 +74,6 @@
 		40D97B2D246AA67F008BC076 /* CurrenciesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesRepository.swift; sourceTree = "<group>"; };
 		40D97B30246AA91E008BC076 /* LocationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRepository.swift; sourceTree = "<group>"; };
 		40FD49FC269A366700FC47C3 /* NeedleGenerated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
-		4B36EE7A1C14D9FD8FE0A634 /* Pods-valiutchik-valiutchikUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-valiutchik-valiutchikUITests.debug.xcconfig"; path = "Target Support Files/Pods-valiutchik-valiutchikUITests/Pods-valiutchik-valiutchikUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		52D20B114BF906A23A2B07C3 /* Pods-valiutchik.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-valiutchik.debug.xcconfig"; path = "Target Support Files/Pods-valiutchik/Pods-valiutchik.debug.xcconfig"; sourceTree = "<group>"; };
-		72BC07BC44FB760CC2A515D9 /* Pods-valiutchik-valiutchikUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-valiutchik-valiutchikUITests.release.xcconfig"; path = "Target Support Files/Pods-valiutchik-valiutchikUITests/Pods-valiutchik-valiutchikUITests.release.xcconfig"; sourceTree = "<group>"; };
-		8FC7C55C61388F345C596C13 /* Pods-valiutchikTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-valiutchikTests.debug.xcconfig"; path = "Target Support Files/Pods-valiutchikTests/Pods-valiutchikTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A802D6D6236F5D3600616AF1 /* valiutchik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = valiutchik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A802D6D9236F5D3600616AF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A802D6DB236F5D3600616AF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,9 +92,6 @@
 		A8D31F0C240B0CED00A1A57F /* CurrencyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyLabel.swift; sourceTree = "<group>"; };
 		A8D948792416D5E00036047A /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		A8D9487B241C16D10036047A /* LocationDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataSource.swift; sourceTree = "<group>"; };
-		B55810E7BAFEC9E33E6321FF /* Pods_valiutchik_valiutchikUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_valiutchik_valiutchikUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1933C1824DE433D8E36D6A3 /* Pods-valiutchikTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-valiutchikTests.release.xcconfig"; path = "Target Support Files/Pods-valiutchikTests/Pods-valiutchikTests.release.xcconfig"; sourceTree = "<group>"; };
-		E2E797C1F5973AF528648F09 /* Pods_valiutchikTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_valiutchikTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +99,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6B9F9822263FAC8E39EF753 /* Pods_valiutchik.framework in Frameworks */,
+				40E3CCF62BA5D71300F34B2D /* Alamofire in Frameworks */,
+				40E3CCF82BA5D71300F34B2D /* XMLMapper in Frameworks */,
+				40E3CCF42BA5D71300F34B2D /* NeedleFoundation in Frameworks */,
+				40E3CCF02BA5D6F900F34B2D /* TomTomSDKReverseGeocoder in Frameworks */,
+				40E3CCF22BA5D6F900F34B2D /* TomTomSDKReverseGeocoderOnline in Frameworks */,
+				40E3CCED2BA5D68600F34B2D /* TomTomSDKCommon in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +112,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C106BE9C75B643DC3904C6D5 /* Pods_valiutchikTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +119,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3BF739CB56856703C69F197 /* Pods_valiutchik_valiutchikUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,27 +171,18 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
+		40E3CCEE2BA5D6F900F34B2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8EE85C75B67BD98EF8F7D47C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				52D20B114BF906A23A2B07C3 /* Pods-valiutchik.debug.xcconfig */,
-				0F04AD4E2772198E0825265A /* Pods-valiutchik.release.xcconfig */,
-				4B36EE7A1C14D9FD8FE0A634 /* Pods-valiutchik-valiutchikUITests.debug.xcconfig */,
-				72BC07BC44FB760CC2A515D9 /* Pods-valiutchik-valiutchikUITests.release.xcconfig */,
-				8FC7C55C61388F345C596C13 /* Pods-valiutchikTests.debug.xcconfig */,
-				E1933C1824DE433D8E36D6A3 /* Pods-valiutchikTests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		999FE35796364DF716EAB36E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				00A89E7688EE79E77CEC20AD /* Pods_valiutchik.framework */,
-				B55810E7BAFEC9E33E6321FF /* Pods_valiutchik_valiutchikUITests.framework */,
-				E2E797C1F5973AF528648F09 /* Pods_valiutchikTests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A802D6CD236F5D3600616AF1 = {
@@ -205,7 +193,7 @@
 				A802D6FD236F5D3900616AF1 /* valiutchikUITests */,
 				A802D6D7236F5D3600616AF1 /* Products */,
 				8EE85C75B67BD98EF8F7D47C /* Pods */,
-				999FE35796364DF716EAB36E /* Frameworks */,
+				40E3CCEE2BA5D6F900F34B2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -283,11 +271,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A802D703236F5D3900616AF1 /* Build configuration list for PBXNativeTarget "valiutchik" */;
 			buildPhases = (
-				7F6B9F54C80BD0DF4F5C0743 /* [CP] Check Pods Manifest.lock */,
 				A802D6D2236F5D3600616AF1 /* Sources */,
 				A802D6D3236F5D3600616AF1 /* Frameworks */,
 				A802D6D4236F5D3600616AF1 /* Resources */,
-				39C7E868197F88816C0F62F8 /* [CP] Embed Pods Frameworks */,
 				A8D9487F24249C730036047A /* Load Mapbox token */,
 				40FD49FE269A371E00FC47C3 /* Needle Generate */,
 			);
@@ -296,6 +282,14 @@
 			dependencies = (
 			);
 			name = valiutchik;
+			packageProductDependencies = (
+				40E3CCEC2BA5D68600F34B2D /* TomTomSDKCommon */,
+				40E3CCEF2BA5D6F900F34B2D /* TomTomSDKReverseGeocoder */,
+				40E3CCF12BA5D6F900F34B2D /* TomTomSDKReverseGeocoderOnline */,
+				40E3CCF32BA5D71300F34B2D /* NeedleFoundation */,
+				40E3CCF52BA5D71300F34B2D /* Alamofire */,
+				40E3CCF72BA5D71300F34B2D /* XMLMapper */,
+			);
 			productName = valiutchik;
 			productReference = A802D6D6236F5D3600616AF1 /* valiutchik.app */;
 			productType = "com.apple.product-type.application";
@@ -304,7 +298,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A802D706236F5D3900616AF1 /* Build configuration list for PBXNativeTarget "valiutchikTests" */;
 			buildPhases = (
-				97849E0415993D3285127968 /* [CP] Check Pods Manifest.lock */,
 				A802D6EB236F5D3900616AF1 /* Sources */,
 				A802D6EC236F5D3900616AF1 /* Frameworks */,
 				A802D6ED236F5D3900616AF1 /* Resources */,
@@ -323,11 +316,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A802D709236F5D3900616AF1 /* Build configuration list for PBXNativeTarget "valiutchikUITests" */;
 			buildPhases = (
-				88A8D8B16092BE793CB68BCF /* [CP] Check Pods Manifest.lock */,
 				A802D6F6236F5D3900616AF1 /* Sources */,
 				A802D6F7236F5D3900616AF1 /* Frameworks */,
 				A802D6F8236F5D3900616AF1 /* Resources */,
-				57AB1347A3F3AFDE11B3FC90 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -371,6 +362,12 @@
 				Base,
 			);
 			mainGroup = A802D6CD236F5D3600616AF1;
+			packageReferences = (
+				40E3CCE82BA5D24C00F34B2D /* XCRemoteSwiftPackageReference "needle" */,
+				40E3CCE92BA5D26F00F34B2D /* XCRemoteSwiftPackageReference "Alamofire" */,
+				40E3CCEA2BA5D2E900F34B2D /* XCRemoteSwiftPackageReference "XMLMapper" */,
+				40E3CCEB2BA5D68600F34B2D /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */,
+			);
 			productRefGroup = A802D6D7236F5D3600616AF1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -413,23 +410,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		39C7E868197F88816C0F62F8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-valiutchik/Pods-valiutchik-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-valiutchik/Pods-valiutchik-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-valiutchik/Pods-valiutchik-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		40FD49FE269A371E00FC47C3 /* Needle Generate */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -447,89 +427,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nneedle generate valiutchik/DI/NeedleGenerated.swift valiutchik/\n";
-		};
-		57AB1347A3F3AFDE11B3FC90 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-valiutchik-valiutchikUITests/Pods-valiutchik-valiutchikUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-valiutchik-valiutchikUITests/Pods-valiutchik-valiutchikUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-valiutchik-valiutchikUITests/Pods-valiutchik-valiutchikUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7F6B9F54C80BD0DF4F5C0743 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-valiutchik-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		88A8D8B16092BE793CB68BCF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-valiutchik-valiutchikUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		97849E0415993D3285127968 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-valiutchikTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 		A8D9487F24249C730036047A /* Load Mapbox token */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -753,7 +650,6 @@
 		};
 		A802D704236F5D3900616AF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52D20B114BF906A23A2B07C3 /* Pods-valiutchik.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
@@ -774,7 +670,6 @@
 		};
 		A802D705236F5D3900616AF1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F04AD4E2772198E0825265A /* Pods-valiutchik.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
@@ -795,7 +690,6 @@
 		};
 		A802D707236F5D3900616AF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8FC7C55C61388F345C596C13 /* Pods-valiutchikTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -816,7 +710,6 @@
 		};
 		A802D708236F5D3900616AF1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1933C1824DE433D8E36D6A3 /* Pods-valiutchikTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -837,7 +730,6 @@
 		};
 		A802D70A236F5D3900616AF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B36EE7A1C14D9FD8FE0A634 /* Pods-valiutchik-valiutchikUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
@@ -857,7 +749,6 @@
 		};
 		A802D70B236F5D3900616AF1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72BC07BC44FB760CC2A515D9 /* Pods-valiutchik-valiutchikUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
@@ -915,6 +806,74 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		40E3CCE82BA5D24C00F34B2D /* XCRemoteSwiftPackageReference "needle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uber/needle.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.24.0;
+			};
+		};
+		40E3CCE92BA5D26F00F34B2D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.0;
+			};
+		};
+		40E3CCEA2BA5D2E900F34B2D /* XCRemoteSwiftPackageReference "XMLMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gcharita/XMLMapper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		40E3CCEB2BA5D68600F34B2D /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tomtom-international/tomtom-sdk-spm-core.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.43.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		40E3CCEC2BA5D68600F34B2D /* TomTomSDKCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40E3CCEB2BA5D68600F34B2D /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKCommon;
+		};
+		40E3CCEF2BA5D6F900F34B2D /* TomTomSDKReverseGeocoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40E3CCEB2BA5D68600F34B2D /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKReverseGeocoder;
+		};
+		40E3CCF12BA5D6F900F34B2D /* TomTomSDKReverseGeocoderOnline */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40E3CCEB2BA5D68600F34B2D /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKReverseGeocoderOnline;
+		};
+		40E3CCF32BA5D71300F34B2D /* NeedleFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40E3CCE82BA5D24C00F34B2D /* XCRemoteSwiftPackageReference "needle" */;
+			productName = NeedleFoundation;
+		};
+		40E3CCF52BA5D71300F34B2D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40E3CCE92BA5D26F00F34B2D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		40E3CCF72BA5D71300F34B2D /* XMLMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40E3CCEA2BA5D2E900F34B2D /* XCRemoteSwiftPackageReference "XMLMapper" */;
+			productName = XMLMapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		A802D6DD236F5D3600616AF1 /* valiutchik.xcdatamodeld */ = {

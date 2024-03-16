@@ -1,6 +1,0 @@
-framework module Pods_valiutchik_valiutchikUITests {
-  umbrella header "Pods-valiutchik-valiutchikUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
