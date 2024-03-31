@@ -1,0 +1,42 @@
+{
+  "originHash" : "86470480b4f5649ee5f44b0b05553c6e30209547406a3b4ac33e2612cd8bc0b0",
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "f455c2975872ccd2d9c81594c658af65716e9b9a",
+        "version" : "5.9.1"
+      }
+    },
+    {
+      "identity" : "needle",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/uber/needle.git",
+      "state" : {
+        "revision" : "6db73ae873952794b94fd6bb5111554e23c160af",
+        "version" : "0.24.0"
+      }
+    },
+    {
+      "identity" : "tomtom-sdk-spm-core",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tomtom-international/tomtom-sdk-spm-core.git",
+      "state" : {
+        "revision" : "fdfa0849cac82febc15a53b7bbab715261c62cfe",
+        "version" : "0.43.0"
+      }
+    },
+    {
+      "identity" : "xmlmapper",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gcharita/XMLMapper.git",
+      "state" : {
+        "revision" : "f3b02419a42d25332f1beecc2b1aee34ebb7afa0",
+        "version" : "2.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}
