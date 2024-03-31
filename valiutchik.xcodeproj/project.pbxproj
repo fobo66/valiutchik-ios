@@ -23,6 +23,7 @@
 		40D97B31246AA91E008BC076 /* LocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D97B30246AA91E008BC076 /* LocationRepository.swift */; };
 		40D97B32246AA91E008BC076 /* LocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D97B30246AA91E008BC076 /* LocationRepository.swift */; };
 		40DBF9B82BB977B7000648C8 /* RootComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DBF9B72BB977B7000648C8 /* RootComponent.swift */; };
+		40DBF9BA2BB9790B000648C8 /* BestRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DBF9B92BB9790B000648C8 /* BestRate.swift */; };
 		40E3CCED2BA5D68600F34B2D /* TomTomSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 40E3CCEC2BA5D68600F34B2D /* TomTomSDKCommon */; };
 		40E3CCF02BA5D6F900F34B2D /* TomTomSDKReverseGeocoder in Frameworks */ = {isa = PBXBuildFile; productRef = 40E3CCEF2BA5D6F900F34B2D /* TomTomSDKReverseGeocoder */; };
 		40E3CCF22BA5D6F900F34B2D /* TomTomSDKReverseGeocoderOnline in Frameworks */ = {isa = PBXBuildFile; productRef = 40E3CCF12BA5D6F900F34B2D /* TomTomSDKReverseGeocoderOnline */; };
@@ -85,6 +86,7 @@
 		40D97B2D246AA67F008BC076 /* CurrenciesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesRepository.swift; sourceTree = "<group>"; };
 		40D97B30246AA91E008BC076 /* LocationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRepository.swift; sourceTree = "<group>"; };
 		40DBF9B72BB977B7000648C8 /* RootComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootComponent.swift; sourceTree = "<group>"; };
+		40DBF9B92BB9790B000648C8 /* BestRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestRate.swift; sourceTree = "<group>"; };
 		40E3CCFB2BA5DFD500F34B2D /* DataRequest+XMLMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataRequest+XMLMapper.swift"; sourceTree = "<group>"; };
 		40E3CCFC2BA5DFD500F34B2D /* SOAPBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOAPBody.swift; sourceTree = "<group>"; };
 		40E3CCFD2BA5DFD500F34B2D /* SOAPEnvelope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOAPEnvelope.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				A8D31F0C240B0CED00A1A57F /* CurrencyLabel.swift */,
 				A8D948792416D5E00036047A /* Currency.swift */,
 				40D97B2824697E25008BC076 /* CurrenciesResponse.swift */,
+				40DBF9B92BB9790B000648C8 /* BestRate.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 				40E3CD082BA5DFD500F34B2D /* SOAPEnvelope.swift in Sources */,
 				40E3CD062BA5DFD500F34B2D /* DataRequest+XMLMapper.swift in Sources */,
 				40E3CD0D2BA5DFD500F34B2D /* XMLEncoding.swift in Sources */,
+				40DBF9BA2BB9790B000648C8 /* BestRate.swift in Sources */,
 				A8D9487C241C16D10036047A /* LocationDataSource.swift in Sources */,
 				A802D6E1236F5D3600616AF1 /* ContentView.swift in Sources */,
 				A802D6DC236F5D3600616AF1 /* SceneDelegate.swift in Sources */,
@@ -710,6 +714,7 @@
 				DEVELOPMENT_TEAM = UVVL854883;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = valiutchik/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -730,6 +735,7 @@
 				DEVELOPMENT_TEAM = UVVL854883;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = valiutchik/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
