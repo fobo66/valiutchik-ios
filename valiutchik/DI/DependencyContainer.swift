@@ -13,15 +13,18 @@ import TomTomSDKReverseGeocoderOnline
 
 struct DependencyContainer {
     // MARK: - Dependencies
+
     lazy var reverseGeocoderApi = try? OnlineReverseGeocoderFactory.create(apiKey: UserDefaults.standard.string(forKey: "TTTomTomAccessToken") ?? ""
     )
-    
+
     // MARK: - Datasources
+
     lazy var locationDataSource: LocationDataSourceProtocol = LocationDataSource(reverseGeocoderApi)
     lazy var currencyRatesDataSource: CurrencyRatesDataSourceProtocol = CurrencyRatesDataSource(baseUrl: "https://admin.myfin.by/outer/authXml")
     lazy var preferenceDataSource: PreferenceDataSourceProtocol = PreferenceDataSource(UserDefaults.standard)
-    
+
     // MARK: - Repositories
+
     lazy var locationRepository = LocationRepository(locationDataSource)
     lazy var currencyRatesRepository = CurrenciesRepository(currencyRatesDataSource)
 }

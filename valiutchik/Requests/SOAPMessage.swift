@@ -10,17 +10,17 @@ import XMLMapper
 
 open class SOAPMessage: XMLMappable {
     public var nodeName: String!
-    
+
     private var xmlnsMessage: String?
     var soapAction: String?
-    
+
     public init(soapAction: String, nameSpace: String) {
         self.soapAction = soapAction
-        self.xmlnsMessage = nameSpace
+        xmlnsMessage = nameSpace
     }
-    
-    required public init?(map: XMLMap) {}
-    
+
+    public required init?(map _: XMLMap) {}
+
     open func mapping(map: XMLMap) {
         xmlnsMessage <- map.attributes["xmlns:m"]
     }

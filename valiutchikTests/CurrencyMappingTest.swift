@@ -26,25 +26,25 @@ class CurrencyMappingTest: XCTestCase {
             XCTFail("Missing file with test data: singleCurrency.xml")
             return
         }
-        
+
         let xml = try String(contentsOf: url)
-        
+
         let parsedXml = XMLMapper<Currency>().map(XMLString: xml)
-        
+
         XCTAssertNotNil(parsedXml)
         XCTAssertEqual(parsedXml?.eurBuy, "2.026")
     }
-    
+
     func testFileMappingToArray() throws {
         guard let url = bundle.url(forResource: "multipleCurrencies", withExtension: "xml") else {
             XCTFail("Missing file with test data: multipleCurrencies.xml")
             return
         }
-        
+
         let xml = try String(contentsOf: url)
-        
+
         let parsedXml = XMLMapper<CurrenciesResponse>().map(XMLString: xml)
-        
+
         XCTAssertNotNil(parsedXml)
         XCTAssertEqual(2, parsedXml?.currencies.count)
     }

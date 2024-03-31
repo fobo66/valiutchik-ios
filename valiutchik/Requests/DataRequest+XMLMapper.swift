@@ -5,8 +5,8 @@
 //  Created by Giorgos Charitakis on 30/09/2017.
 //
 
-import Foundation
 import Alamofire
+import Foundation
 import XMLMapper
 
 extension DataRequest {
@@ -14,18 +14,18 @@ extension DataRequest {
         case noData = 1
         case dataSerializationFailed = 2
     }
-    
-    internal func newError(_ code: ErrorCode, failureReason: String = "XMLMapper failed to serialize response.") -> NSError {
+
+    func newError(_ code: ErrorCode, failureReason: String = "XMLMapper failed to serialize response.") -> NSError {
         let errorDomain = "com.alamofirexmlmapper.error"
-        
+
         let userInfo = [NSLocalizedFailureReasonErrorKey: failureReason]
         let returnError = NSError(domain: errorDomain, code: code.rawValue, userInfo: userInfo)
-        
+
         return returnError
     }
-    
+
     /// Utility function for extracting XML from response
-    internal func processResponse(
+    func processResponse(
         request: URLRequest?,
         response: HTTPURLResponse?,
         data: Data?,
@@ -45,10 +45,10 @@ extension DataRequest {
             print(error)
             XML = nil
         }
-        
+
         return XML
     }
-    
+
     /// Adds a handler using a `XMLMappableResponseSerializer` to be called once the request has finished.
     ///
     /// - parameters:
@@ -83,20 +83,20 @@ extension DataRequest {
                 emptyRequestMethods: emptyRequestMethods
             ) { request, response, data, error in
                 let XMLObject = self.processResponse(request: request, response: response, data: data, keyPath: keyPath, encoding: encoding, options: options)
-                
+
                 if let object = object {
                     _ = XMLMapper<T>().map(XMLObject: XMLObject, toObject: object)
                     return object
                 } else if let parsedObject = XMLMapper<T>().map(XMLObject: XMLObject) {
                     return parsedObject
                 }
-                
+
                 throw AFError.responseSerializationFailed(reason: .decodingFailed(error: self.newError(.dataSerializationFailed)))
             },
             completionHandler: completionHandler
         )
     }
-    
+
     /// Adds a handler using a `XMLMappableArrayResponseSerializer` to be called once the request has finished. T: XMLBaseMappable
     ///
     /// - parameters:
@@ -129,11 +129,11 @@ extension DataRequest {
                 emptyRequestMethods: emptyRequestMethods
             ) { request, response, data, error in
                 let XMLObject = self.processResponse(request: request, response: response, data: data, keyPath: keyPath, encoding: encoding, options: options)
-                
+
                 if let parsedObject = XMLMapper<T>().mapArray(XMLObject: XMLObject) {
                     return parsedObject
                 }
-                
+
                 throw AFError.responseSerializationFailed(reason: .decodingFailed(error: self.newError(.dataSerializationFailed)))
             },
             completionHandler: completionHandler

@@ -7,8 +7,8 @@
 //
 
 import Combine
-import Foundation
 import CoreLocation
+import Foundation
 import TomTomSDKCommon
 import TomTomSDKReverseGeocoder
 import TomTomSDKReverseGeocoderOnline
@@ -31,12 +31,11 @@ class LocationDataSource: LocationDataSourceProtocol {
             let options = ReverseGeocoderOptions(
                 position: coordinate,
                 locale: Locale(identifier: "ru")
-
             )
 
             geocoder.reverseGeocode(options: options) { result in
                 guard case let .success(response) = result,
-                let address = response.places.first?.place.address else { return }
+                      let address = response.places.first?.place.address else { return }
                 let city = address.countrySecondarySubdivision ?? ""
                 promise(Result.success(city))
             }

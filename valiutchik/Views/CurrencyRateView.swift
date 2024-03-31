@@ -10,11 +10,11 @@ import SwiftUI
 
 struct CurrencyRateView: View {
     let currency: CurrencyLabel
-    
+
     init(currency: CurrencyLabel) {
         self.currency = currency
     }
-    
+
     var body: some View {
         HStack {
             VStack(alignment: .leading) {

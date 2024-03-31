@@ -1,5 +1,5 @@
 //
-//  CurrenciewResponse.swift
+//  CurrenciesResponse.swift
 //  valiutchik
 //
 //  Created by Andrei Mukamolau on 5/11/20.
@@ -9,20 +9,14 @@
 import Foundation
 import XMLMapper
 
-struct CurrenciesResponse : XMLMappable {
-    
+struct CurrenciesResponse: XMLMappable {
     var currencies: [Currency]! = []
-    
-    
-    init?(map: XMLMap) {
-        
-    }
-    
+
+    init?(map _: XMLMap) {}
+
     var nodeName: String!
-    
+
     mutating func mapping(map: XMLMap) {
         currencies <- map["bank"]
     }
-    
-    
 }

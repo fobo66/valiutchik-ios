@@ -9,7 +9,6 @@
 import XCTest
 
 class valiutchikUITests: XCTestCase {
-
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
 
@@ -34,7 +33,7 @@ class valiutchikUITests: XCTestCase {
 
     func testLaunchPerformance() {
         // This measures how long it takes to launch your application from the home screen.
-        measure(metrics: [XCTApplicationLaunchMetric.init()]) {
+        measure(metrics: [XCTApplicationLaunchMetric()]) {
             XCUIApplication().launch()
         }
     }

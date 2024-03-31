@@ -57,7 +57,7 @@ extension Currency {
 }
 
 extension Currency: Equatable {
-    static func ==(lhs: Currency, rhs: Currency) -> Bool {
+    static func == (lhs: Currency, rhs: Currency) -> Bool {
         return
             lhs.bankname == rhs.bankname &&
             lhs.eurBuy == rhs.eurBuy &&

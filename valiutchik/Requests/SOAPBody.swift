@@ -10,18 +10,18 @@ import XMLMapper
 
 public class SOAPBody: XMLMappable {
     public var nodeName: String!
-    
+
     var soapMessage: SOAPMessage?
-    
+
     private var soapAction: String?
-    
+
     init(soapMessage: SOAPMessage) {
-        self.soapAction = soapMessage.soapAction
+        soapAction = soapMessage.soapAction
         self.soapMessage = soapMessage
     }
-    
-    required public init?(map: XMLMap) {}
-    
+
+    public required init?(map _: XMLMap) {}
+
     public func mapping(map: XMLMap) {
         soapMessage <- map["m:\(soapAction ?? "")"]
     }

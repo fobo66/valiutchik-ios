@@ -1,5 +1,5 @@
 //
-//  Currency.swift
+//  CurrencyLabel.swift
 //  valiutchik
 //
 //  Created by Andrei Mukamolau on 3/1/20.

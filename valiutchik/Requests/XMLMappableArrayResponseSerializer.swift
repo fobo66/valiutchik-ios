@@ -5,8 +5,8 @@
 //  Created by Giorgos Charitakis on 26/6/20.
 //
 
-import Foundation
 import Alamofire
+import Foundation
 import XMLMapper
 
 extension Array: EmptyResponse where Element: XMLBaseMappable & EmptyResponse {
@@ -20,7 +20,7 @@ public final class XMLMappableArrayResponseSerializer<T: XMLBaseMappable>: Respo
     public let emptyResponseCodes: Set<Int>
     public let emptyRequestMethods: Set<HTTPMethod>
     public let serializeCallback: (_ request: URLRequest?, _ response: HTTPURLResponse?, _ data: Data?, _ error: Error?) throws -> [T]
-    
+
     /// Creates an instance using the values provided.
     ///
     /// - Parameters:
@@ -43,19 +43,19 @@ public final class XMLMappableArrayResponseSerializer<T: XMLBaseMappable>: Respo
         self.emptyRequestMethods = emptyRequestMethods
         self.serializeCallback = serializeCallback
     }
-    
+
     public func serialize(request: URLRequest?, response: HTTPURLResponse?, data: Data?, error: Error?) throws -> [T] {
         if let error = error { throw error }
-        
+
         guard let data = data, !data.isEmpty else {
             guard emptyResponseAllowed(forRequest: request, response: response) else {
                 throw AFError.responseSerializationFailed(reason: .inputDataNilOrZeroLength)
             }
-            
+
             guard let emptyResponseType = [T].self as? EmptyResponse.Type, let emptyValue = emptyResponseType.emptyValue() as? [T] else {
                 throw AFError.responseSerializationFailed(reason: .invalidEmptyResponse(type: "\([T].self)"))
             }
-            
+
             return emptyValue
         }
         return try serializeCallback(request, response, data, error)

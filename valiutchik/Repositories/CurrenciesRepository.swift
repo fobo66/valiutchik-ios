@@ -17,7 +17,7 @@ class CurrenciesRepository {
     }
 
     func fetchCourses(city: String) -> AnyPublisher<Currency, Never> {
-        return self.currencyRatesDataSource.fetchCourses(city: city)
+        return currencyRatesDataSource.fetchCourses(city: city)
             .flatMap { $0.publisher }
             .filter { $0.isValid() }
             .eraseToAnyPublisher()
