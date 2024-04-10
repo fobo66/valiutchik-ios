@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum CurrencyLabel: String {
+enum CurrencyLabel: String, Codable {
     case eur = "EUR"
     case usd = "USD"
     case rur = "RUR"
