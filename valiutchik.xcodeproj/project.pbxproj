@@ -45,7 +45,6 @@
 		40FFF58924B8731D00EFF13E /* LocationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D9487B241C16D10036047A /* LocationDataSource.swift */; };
 		A802D6DA236F5D3600616AF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A802D6D9236F5D3600616AF1 /* AppDelegate.swift */; };
 		A802D6DC236F5D3600616AF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A802D6DB236F5D3600616AF1 /* SceneDelegate.swift */; };
-		A802D6DF236F5D3600616AF1 /* valiutchik.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A802D6DD236F5D3600616AF1 /* valiutchik.xcdatamodeld */; };
 		A802D6E1236F5D3600616AF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A802D6E0236F5D3600616AF1 /* ContentView.swift */; };
 		A802D6E3236F5D3900616AF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A802D6E2236F5D3900616AF1 /* Assets.xcassets */; };
 		A802D6E6236F5D3900616AF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A802D6E5236F5D3900616AF1 /* Preview Assets.xcassets */; };
@@ -101,7 +100,6 @@
 		A802D6D6236F5D3600616AF1 /* valiutchik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = valiutchik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A802D6D9236F5D3600616AF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A802D6DB236F5D3600616AF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A802D6DE236F5D3600616AF1 /* valiutchik.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = valiutchik.xcdatamodel; sourceTree = "<group>"; };
 		A802D6E0236F5D3600616AF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A802D6E2236F5D3900616AF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A802D6E5236F5D3900616AF1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -266,7 +264,6 @@
 				A802D6E2236F5D3900616AF1 /* Assets.xcassets */,
 				A802D6E7236F5D3900616AF1 /* LaunchScreen.storyboard */,
 				A802D6EA236F5D3900616AF1 /* Info.plist */,
-				A802D6DD236F5D3600616AF1 /* valiutchik.xcdatamodeld */,
 				A802D6E4236F5D3900616AF1 /* Preview Content */,
 			);
 			path = valiutchik;
@@ -509,7 +506,6 @@
 				40E3CD0C2BA5DFD500F34B2D /* SOAPVersion.swift in Sources */,
 				40E3CD0E2BA5DFD500F34B2D /* XMLMappableArrayResponseSerializer.swift in Sources */,
 				40AE09DB241127EB00C9671F /* CurrencyRatesDataSource.swift in Sources */,
-				A802D6DF236F5D3600616AF1 /* valiutchik.xcdatamodeld in Sources */,
 				40E3CD0B2BA5DFD500F34B2D /* SOAPMessage.swift in Sources */,
 				40D97B2E246AA67F008BC076 /* CurrenciesRepository.swift in Sources */,
 				4038B2A2257D629200D8563E /* DependencyContainer.swift in Sources */,
@@ -933,19 +929,6 @@
 			productName = XMLMapper;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		A802D6DD236F5D3600616AF1 /* valiutchik.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				A802D6DE236F5D3600616AF1 /* valiutchik.xcdatamodel */,
-			);
-			currentVersion = A802D6DE236F5D3600616AF1 /* valiutchik.xcdatamodel */;
-			path = valiutchik.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = A802D6CE236F5D3600616AF1 /* Project object */;
 }
