@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -314,9 +314,9 @@
 			buildConfigurationList = A802D703236F5D3900616AF1 /* Build configuration list for PBXNativeTarget "valiutchik" */;
 			buildPhases = (
 				A802D6D2236F5D3600616AF1 /* Sources */,
+				A8D9487F24249C730036047A /* Load TomTom token */,
 				A802D6D3236F5D3600616AF1 /* Frameworks */,
 				A802D6D4236F5D3600616AF1 /* Resources */,
-				A8D9487F24249C730036047A /* Load TomTom token */,
 				40FD49FE269A371E00FC47C3 /* Needle Generate */,
 			);
 			buildRules = (
@@ -397,7 +397,7 @@
 				};
 			};
 			buildConfigurationList = A802D6D1236F5D3600616AF1 /* Build configuration list for PBXProject "valiutchik" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -480,8 +480,8 @@
 			);
 			inputPaths = (
 				"$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)",
-				"~/.mapbox",
-				"~/mapbox",
+				"~/.tomtom",
+				"~/tomtom",
 			);
 			name = "Load TomTom token";
 			outputFileListPaths = (
