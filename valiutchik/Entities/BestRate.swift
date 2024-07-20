@@ -17,7 +17,7 @@ class BestRate: ObservableObject {
     var value: String
     var timestamp: Date
     var isBuy: Bool
-    
+
     init(id: String = UUID().uuidString, bank: String, name: String, currency: CurrencyLabel, value: String, timestamp: Date, isBuy: Bool) {
         self.id = id
         self.bank = bank
