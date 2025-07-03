@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 63;
+	objectVersion = 90;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -119,7 +119,6 @@
 /* Begin PBXFrameworksBuildPhase section */
 		A802D6D3236F5D3600616AF1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				40E3CCF62BA5D71300F34B2D /* Alamofire in Frameworks */,
 				40E3CCF82BA5D71300F34B2D /* XMLMapper in Frameworks */,
@@ -128,21 +127,16 @@
 				40E3CCF22BA5D6F900F34B2D /* TomTomSDKReverseGeocoderOnline in Frameworks */,
 				40E3CCED2BA5D68600F34B2D /* TomTomSDKCommon in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A802D6EC236F5D3900616AF1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A802D6F7236F5D3900616AF1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -321,8 +315,6 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = valiutchik;
 			packageProductDependencies = (
 				40E3CCEC2BA5D68600F34B2D /* TomTomSDKCommon */,
@@ -397,7 +389,6 @@
 				};
 			};
 			buildConfigurationList = A802D6D1236F5D3600616AF1 /* Build configuration list for PBXProject "valiutchik" */;
-			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -411,6 +402,7 @@
 				40E3CCEA2BA5D2E900F34B2D /* XCRemoteSwiftPackageReference "XMLMapper" */,
 				40E3CCEB2BA5D68600F34B2D /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */,
 			);
+			preferredProjectObjectVersion = 90;
 			productRefGroup = A802D6D7236F5D3600616AF1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -425,79 +417,67 @@
 /* Begin PBXResourcesBuildPhase section */
 		A802D6D4236F5D3600616AF1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				40AE09D5240CF54600C9671F /* Localizable.strings in Resources */,
 				A802D6E9236F5D3900616AF1 /* LaunchScreen.storyboard in Resources */,
 				A802D6E6236F5D3900616AF1 /* Preview Assets.xcassets in Resources */,
 				A802D6E3236F5D3900616AF1 /* Assets.xcassets in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A802D6ED236F5D3900616AF1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				40D97B2724696F6A008BC076 /* multipleCurrencies.xml in Resources */,
 				40B72C2E2463EFDF007D1936 /* singleCurrency.xml in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A802D6F8236F5D3900616AF1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		40FD49FE269A371E00FC47C3 /* Needle Generate */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
 			name = "Needle Generate";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nneedle generate valiutchik/DI/NeedleGenerated.swift valiutchik/\n";
+			shellScript = (
+				"# Type a script or drag a script file from your workspace to insert its path.",
+				"needle generate valiutchik/DI/NeedleGenerated.swift valiutchik/",
+				"",
+			);
 		};
 		A8D9487F24249C730036047A /* Load TomTom token */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)",
 				"~/.tomtom",
 				"~/tomtom",
 			);
 			name = "Load TomTom token";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Look for a global file named 'mapbox' or '.mapbox' within the home directory\ntoken_file=~/.tomtom\ntoken_file2=~/tomtom\ntoken=\"$(cat $token_file 2>/dev/null || cat $token_file2 2>/dev/null)\"\nif [ \"$token\" ]; then\n  plutil -replace TTTomTomAccessToken -string $token \"$TARGET_BUILD_DIR/$INFOPLIST_PATH\"\nelse\n  echo 'warning: Missing TomTom access token'\n  open 'https://developer.tomtom.com/user/me/apps'\n  echo \"warning: Get an access token from <https://developer.tomtom.com/user/me/apps>, then create a new file at $token_file or $token_file2 that contains the access token.\"\nfi\n";
+			shellScript = (
+				"# Look for a global file named 'mapbox' or '.mapbox' within the home directory",
+				"token_file=~/.tomtom",
+				"token_file2=~/tomtom",
+				"token=\"$(cat $token_file 2>/dev/null || cat $token_file2 2>/dev/null)\"",
+				"if [ \"$token\" ]; then",
+				"  plutil -replace TTTomTomAccessToken -string $token \"$TARGET_BUILD_DIR/$INFOPLIST_PATH\"",
+				"else",
+				"  echo 'warning: Missing TomTom access token'",
+				"  open 'https://developer.tomtom.com/user/me/apps'",
+				"  echo \"warning: Get an access token from <https://developer.tomtom.com/user/me/apps>, then create a new file at $token_file or $token_file2 that contains the access token.\"",
+				"fi",
+				"",
+			);
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A802D6D2236F5D3600616AF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				40D97B31246AA91E008BC076 /* LocationRepository.swift in Sources */,
 				A8D31F0D240B0CED00A1A57F /* CurrencyLabel.swift in Sources */,
@@ -526,11 +506,9 @@
 				A8D31F0B240B0BF500A1A57F /* CurrencyRateView.swift in Sources */,
 				40FD49FD269A366700FC47C3 /* NeedleGenerated.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A802D6EB236F5D3900616AF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				40D97B2F246AA67F008BC076 /* CurrenciesRepository.swift in Sources */,
 				40D97B32246AA91E008BC076 /* LocationRepository.swift in Sources */,
@@ -541,15 +519,12 @@
 				40FFF58924B8731D00EFF13E /* LocationDataSource.swift in Sources */,
 				4038B2B1257D6C5400D8563E /* PreferenceDataSource.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A802D6F6236F5D3900616AF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				A802D6FF236F5D3900616AF1 /* valiutchikUITests.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
@@ -586,7 +561,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A802D701236F5D3900616AF1 /* Debug */ = {
+		A802D701236F5D3900616AF1 /* Debug configuration for PBXProject "valiutchik" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -639,7 +614,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -649,7 +624,7 @@
 			};
 			name = Debug;
 		};
-		A802D702236F5D3900616AF1 /* Release */ = {
+		A802D702236F5D3900616AF1 /* Release configuration for PBXProject "valiutchik" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -696,7 +671,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -706,7 +681,7 @@
 			};
 			name = Release;
 		};
-		A802D704236F5D3900616AF1 /* Debug */ = {
+		A802D704236F5D3900616AF1 /* Debug configuration for PBXNativeTarget "valiutchik" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
@@ -715,7 +690,7 @@
 				DEVELOPMENT_TEAM = UVVL854883;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = valiutchik/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -727,7 +702,7 @@
 			};
 			name = Debug;
 		};
-		A802D705236F5D3900616AF1 /* Release */ = {
+		A802D705236F5D3900616AF1 /* Release configuration for PBXNativeTarget "valiutchik" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
@@ -736,7 +711,7 @@
 				DEVELOPMENT_TEAM = UVVL854883;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = valiutchik/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -748,7 +723,7 @@
 			};
 			name = Release;
 		};
-		A802D707236F5D3900616AF1 /* Debug */ = {
+		A802D707236F5D3900616AF1 /* Debug configuration for PBXNativeTarget "valiutchikTests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
@@ -768,7 +743,7 @@
 			};
 			name = Debug;
 		};
-		A802D708236F5D3900616AF1 /* Release */ = {
+		A802D708236F5D3900616AF1 /* Release configuration for PBXNativeTarget "valiutchikTests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
@@ -788,7 +763,7 @@
 			};
 			name = Release;
 		};
-		A802D70A236F5D3900616AF1 /* Debug */ = {
+		A802D70A236F5D3900616AF1 /* Debug configuration for PBXNativeTarget "valiutchikUITests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
@@ -807,7 +782,7 @@
 			};
 			name = Debug;
 		};
-		A802D70B236F5D3900616AF1 /* Release */ = {
+		A802D70B236F5D3900616AF1 /* Release configuration for PBXNativeTarget "valiutchikUITests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
@@ -832,37 +807,33 @@
 		A802D6D1236F5D3600616AF1 /* Build configuration list for PBXProject "valiutchik" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A802D701236F5D3900616AF1 /* Debug */,
-				A802D702236F5D3900616AF1 /* Release */,
+				A802D701236F5D3900616AF1 /* Debug configuration for PBXProject "valiutchik" */,
+				A802D702236F5D3900616AF1 /* Release configuration for PBXProject "valiutchik" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		A802D703236F5D3900616AF1 /* Build configuration list for PBXNativeTarget "valiutchik" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A802D704236F5D3900616AF1 /* Debug */,
-				A802D705236F5D3900616AF1 /* Release */,
+				A802D704236F5D3900616AF1 /* Debug configuration for PBXNativeTarget "valiutchik" */,
+				A802D705236F5D3900616AF1 /* Release configuration for PBXNativeTarget "valiutchik" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		A802D706236F5D3900616AF1 /* Build configuration list for PBXNativeTarget "valiutchikTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A802D707236F5D3900616AF1 /* Debug */,
-				A802D708236F5D3900616AF1 /* Release */,
+				A802D707236F5D3900616AF1 /* Debug configuration for PBXNativeTarget "valiutchikTests" */,
+				A802D708236F5D3900616AF1 /* Release configuration for PBXNativeTarget "valiutchikTests" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		A802D709236F5D3900616AF1 /* Build configuration list for PBXNativeTarget "valiutchikUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A802D70A236F5D3900616AF1 /* Debug */,
-				A802D70B236F5D3900616AF1 /* Release */,
+				A802D70A236F5D3900616AF1 /* Debug configuration for PBXNativeTarget "valiutchikUITests" */,
+				A802D70B236F5D3900616AF1 /* Release configuration for PBXNativeTarget "valiutchikUITests" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
